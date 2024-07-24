@@ -26,12 +26,12 @@ module Controller(
     input wire [2:0] funct3,
     input wire [6:0] funct7,
     output reg [2:0] sext_op,
-    output wire [1:0] npc_op,
-    output wire ram_we,
+    output reg [1:0] npc_op,
+    output reg ram_we,
     output reg [3:0] alu_op,
-    output wire alub_sel,
-    output wire rf_we,
-    output wire [1:0] rf_wsel
+    output reg alub_sel,
+    output reg rf_we,
+    output reg [1:0] rf_wsel
     );
     always @(*)begin
         casez({funct7,funct3,opcode})
@@ -44,8 +44,7 @@ module Controller(
             {7'bxxxxxxx,3'bxxx,7'b0100011}:alu_op = {1'b0,3'b000};
             {7'bxxxxxx,3'bxxx,7'b1100011}:alu_op = {1'b0,funct3};
             {7'bxxxxxxx,3'bxxx,7'b0110111}:alu_op = {1'b0,3'b000};
-            default:alu_op = {1'b0,3'b000};
-        endcase  
+            default:alu_op = {1'b0,3'b000};        endcase  
     end
     always @(*)begin
         casez({funct7,funct3,opcode})
@@ -62,13 +61,38 @@ module Controller(
     end
     always @(*)begin
         casez({funct7,funct3,opcode})
-            {7'bxxxxxxx,3'b000,7'b1100111}:npc_op = 
-        
-        
+            {7'bxxxxxxx,3'b000,7'b1100111}:npc_op = `NPC_OP_JALR;
+            {7'bxxxxxxx,3'bxxx,7'b1100011}:npc_op = `NPC_OP_OFFSET;
+            default:npc_op = `NPC_OP_NEXT;
         endcase
     end
-      
-        
+    always @(*)begin
+        casez({funct7,funct3,opcode})
+            {7'bxxxxxxx,3'bxxx,7'b1100011}:ram_we = 1'b1;
+            default:ram_we = 1'b0;
+        endcase
+    end
     
+    always @(*)begin
+        casez({funct7,funct3,opcode})
+            {7'bxxxxxxx,3'bxxx,7'b0110011}:alub_sel = `ALUB_RD2;
+            default:alub_sel = `ALUB_EXT;
+        endcase
+    end
     
+    always @(*)begin
+        casez({funct7,funct3,opcode})
+            {7'bxxxxxxx,3'bxxx,7'b0100011}:rf_we = 1'b0;
+            {7'bxxxxxxx,3'bxxx,7'b1100011}:rf_we = 1'b0;
+            default:rf_we = 1'b1;
+        endcase
+    end
+    always @(*)begin
+        casez({funct7,funct3,opcode})
+            {7'bxxxxxxx,3'bxxx,7'b110x111}:rf_wsel = `RF_WSEL_PC4;
+            {7'bxxxxxxx,3'bxxx,7'b0110111}:rf_wsel = `RF_WSEL_SEXT;
+            {7'bxxxxxxx,3'bxxx,7'b0x10011}:rf_wsel = `RF_WSEL_ALU;
+            {7'bxxxxxxx,3'bxxx,7'b0000011}:rf_wsel = `RF_WSEL_DRAM;
+        endcase
+    end
 endmodule

@@ -30,7 +30,7 @@ module myCPU (
 `endif
 );
 
-    // TODO: 瀹屾垚浣犺嚜宸辩殑鍗曞懆鏈烠PU璁捐
+    // TODO: 完成你自己的单周期CPU设计
     //
 
 `ifdef RUN_TRACE
