@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../../../../../Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/sim/IROM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
