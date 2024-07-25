@@ -35,7 +35,6 @@ module myCPU (
     wire [31:0] NPC_npc;
     wire [31:0] NPC_pc4;
     wire [31:0] PC_pc;
-    wire [31:0] IROM_inst;
     wire [31:0] SEXT_ext;
     wire [31:0] DRAM_rdo;
     wire [31:0] ALU_C;
@@ -59,6 +58,19 @@ module myCPU (
         .npc(NPC_npc),
         .pc4(NPC_pc4)
     );
+    PC myPC(
+        .clk(cpu_clk),
+        .rst(cpu_rst),
+        .din(NPC_npc),
+        .pc(PC_pc)
+    );
+    assign inst_addr = PC_pc[15:2];
+    SEXT mySEXT(
+        .op(CTRL_sext_op),
+        .din(inst[31:7]),
+        .ext(SEXT_ext)  
+    );
+    
     
     
 
