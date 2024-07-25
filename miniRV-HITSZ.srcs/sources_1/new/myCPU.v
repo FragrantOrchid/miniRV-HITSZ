@@ -32,6 +32,35 @@ module myCPU (
 
     // TODO: 完成你自己的单周期CPU设计
     //
+    wire [31:0] NPC_npc;
+    wire [31:0] NPC_pc4;
+    wire [31:0] PC_pc;
+    wire [31:0] IROM_inst;
+    wire [31:0] SEXT_ext;
+    wire [31:0] DRAM_rdo;
+    wire [31:0] ALU_C;
+    wire ALU_f;
+    wire [31:0] WSEL_data;
+    wire [31:0] ALU_B_C;
+    wire [31:0] RF_rD1;
+    wire [31:0] RF_rD2;
+    wire [2:0] CTRL_sext_op;
+    wire [1:0] CTRL_npc_op;
+    wire CTRL_ram_we;
+    wire [3:0] CTRL_alu_op;
+    wire CTRL_alub_sel;
+    wire CTRL_rf_we;
+    wire [1:0] CTRL_rf_wsel;
+    NPC myNPC (
+        .PC(PC_pc),
+        .offset(SEXT_ext),
+        .br(ALU_f),
+        .op(CTRL_npc_op),
+        .npc(NPC_npc),
+        .pc4(NPC_pc4)
+    );
+    
+    
 
 `ifdef RUN_TRACE
     // Debug Interface

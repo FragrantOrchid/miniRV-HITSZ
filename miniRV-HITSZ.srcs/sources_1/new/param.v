@@ -1,10 +1,11 @@
 `ifndef CPU_PARAM
 `define CPU_PARAM
-    `define ADD 'b000
-    `define RF_WSEL_PC4 2'b00 
-    `define RF_WSEL_SEXT 2'b01
-    `define RF_WSEL_ALU 2'b10
-    `define RF_WSEL_DRAM 2'b11
+    `define ZERO_32 32'h00000000
+    
+    `define WSEL_PC4 2'b00 
+    `define WSEL_SEXT 2'b01
+    `define WSEL_ALU 2'b10
+    `define WSEL_DRAM 2'b11
     
     `define SEXT_OP_I_S 3'b000 //I型有符号
     `define SEXT_OP_I_U 3'b001 //I型无符号
@@ -19,6 +20,9 @@
 
     `define ALUB_RD2 1'b0
     `define ALUB_EXT 1'b1
+    
+    `define ENABLE 1'b1
+    `define DISABLE 1'b0
     
 
 

@@ -1,0 +1,1012 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 23592
+License: Customer
+
+Current time: 	Thu Jul 25 11:49:01 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1600
+Screen resolution (DPI): 144
+Available screens: 2
+Available disk space: 284 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	FragrantOrchid
+User home directory: C:/Users/FragrantOrchid
+User working directory: F:/miniRV-HITSZ
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/FragrantOrchid/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/FragrantOrchid/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/FragrantOrchid/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/miniRV-HITSZ/vivado.log
+Vivado journal file location: 	F:/miniRV-HITSZ/vivado.jou
+Engine tmp dir: 	F:/miniRV-HITSZ/.Xil/Vivado-23592-ClientOrchid
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 596 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 68 MB (+69087kb) [00:00:06]
+// [Engine Memory]: 547 MB (+422603kb) [00:00:06]
+// Opening Vivado Project: F:\miniRV-HITSZ\miniRV-HITSZ.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/miniRV-HITSZ/miniRV-HITSZ.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 51 MB. Current time: 7/25/24, 11:49:03 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+30179kb) [00:00:13]
+// [Engine Memory]: 708 MB (+139517kb) [00:00:13]
+// [GUI Memory]: 106 MB (+328kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  2376 ms.
+// Tcl Message: open_project F:/miniRV-HITSZ/miniRV-HITSZ.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 805 MB (+64667kb) [00:00:15]
+// Tcl Message: open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 843.078 ; gain = 248.469 
+// Project name: miniRV-HITSZ; location: F:/miniRV-HITSZ; part: xc7a100tfgg484-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 5, false); // B (D, cp)
+// [GUI Memory]: 120 MB (+9589kb) [00:00:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 425 seconds
+selectCodeEditor("ALU.v", 310, 446); // cl (w, cp)
+// Elapsed time: 56 seconds
+selectCodeEditor("ALU.v", 116, 494); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("ALU.v", 154, 452); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("ALU.v", 436, 653); // cl (w, cp)
+selectCodeEditor("ALU.v", 713, 561); // cl (w, cp)
+selectCodeEditor("ALU.v", 563, 525); // cl (w, cp)
+selectCodeEditor("ALU.v", 756, 544); // cl (w, cp)
+// Elapsed time: 211 seconds
+selectCodeEditor("ALU.v", 397, 650); // cl (w, cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("ALU.v", 406, 432); // cl (w, cp)
+// Elapsed time: 75 seconds
+selectCodeEditor("ALU.v", 323, 500); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("ALU.v", 521, 593); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("ALU.v", 315, 572); // cl (w, cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("ALU.v", 322, 610); // cl (w, cp)
+// Elapsed time: 92 seconds
+selectCodeEditor("ALU.v", 478, 651); // cl (w, cp)
+// Elapsed time: 298 seconds
+selectCodeEditor("ALU.v", 361, 773); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("ALU.v", 310, 535); // cl (w, cp)
+selectCodeEditor("ALU.v", 332, 693); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("ALU.v", 298, 499); // cl (w, cp)
+// Elapsed time: 87 seconds
+selectCodeEditor("ALU.v", 386, 696); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("ALU.v", 295, 491); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("ALU.v", 216, 537); // cl (w, cp)
+selectCodeEditor("ALU.v", 216, 517); // cl (w, cp)
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 63 seconds
+selectCodeEditor("myCPU.v", 438, 227); // cl (w, cp)
+selectCodeEditor("myCPU.v", 651, 308); // cl (w, cp)
+// Elapsed time: 55 seconds
+selectCodeEditor("myCPU.v", 442, 234); // cl (w, cp)
+selectCodeEditor("myCPU.v", 470, 454); // cl (w, cp)
+selectCodeEditor("myCPU.v", 503, 340); // cl (w, cp)
+selectCodeEditor("myCPU.v", 605, 347); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 837 MB. GUI used memory: 64 MB. Current time: 7/25/24, 12:19:04 PM CST
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cp)
+// [Engine Memory]: 859 MB (+14877kb) [00:30:20]
+// Elapsed time: 35 seconds
+dismissDialog("Re-customize IP"); // r (cp)
+// Elapsed time: 1074 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ALU_B.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/ALU_B.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/ALU_B.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU_B (ALU_B.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU_B (ALU_B.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ALU_B.v", 300, 564); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectCodeEditor("ALU_B.v", 148, 601); // cl (w, cp)
+selectCodeEditor("ALU_B.v", 148, 586); // cl (w, cp)
+selectCodeEditor("ALU_B.v", 509, 486); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("ALU_B.v", 208, 656); // cl (w, cp)
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Controller (Controller.v)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU_B (ALU_B.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU_B (ALU_B.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ALU_B.v", 389, 653); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("ALU_B.v", 324, 504); // cl (w, cp)
+selectCodeEditor("ALU_B.v", 429, 456); // cl (w, cp)
+selectCodeEditor("ALU_B.v", 449, 434); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("ALU_B.v", 384, 503); // cl (w, cp)
+selectCodeEditor("ALU_B.v", 686, 661); // cl (w, cp)
+// [GUI Memory]: 129 MB (+2429kb) [00:52:52]
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 565, 379); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("param.v", 405, 508); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU_B.v", 3); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 66 MB. Current time: 7/25/24, 12:49:04 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3714 ms. Increasing delay to 11142 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3762 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9 ms. Decreasing delay to 2009 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3001057 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 66 MB. Current time: 7/25/24, 1:40:54 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  966678 ms.
+// Elapsed time: 5124 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 67 MB. Current time: 7/25/24, 2:10:56 PM CST
+// Elapsed time: 1214 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "memory"); // OverlayTextField (ay, cp)
+// Elapsed time: 47 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Distributed Memory Generator"); // OverlayTextField (ay, cp)
+selectTreeTableHeader(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Status", 2); // O (Q, cp)
+selectTreeTableHeader(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Name", 0); // O (Q, cp)
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 6, "Distributed Memory Generator", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 6); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 6, "Distributed Memory Generator", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cp): Customize IP: addNotify
+// Elapsed time: 29 seconds
+setText("Component Name", "RF"); // z (ch, r)
+setText("Depth", "32"); // z (cU, r)
+setText("Data Width", "32"); // z (cU, r)
+// Elapsed time: 11 seconds
+dismissDialog("Customize IP"); // r (cp)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Block Memory Generator"); // OverlayTextField (ay, cp)
+// Elapsed time: 157 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cp):  Customize IP : addNotify
+// r (cp): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (cp)
+// Elapsed time: 27 seconds
+setText("Component Name", "RF"); // z (U, r)
+dismissDialog("Customize IP"); // r (cp)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Memory Generator"); // OverlayTextField (ay, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 9, "Distributed Memory Generator", 0, false); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 9, "Distributed Memory Generator", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cp): Customize IP: addNotify
+// Elapsed time: 12 seconds
+setText("Depth", "32"); // z (cU, r)
+// Elapsed time: 12 seconds
+setText("Data Width", "32"); // z (cU, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cT (C, r)
+// Elapsed time: 58 seconds
+dismissDialog("Customize IP"); // r (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 75 MB. Current time: 7/25/24, 2:40:56 PM CST
+// Elapsed time: 495 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ac (cp)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1175 ms.
+// Elapsed time: 20 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false, false, false, false, false, true); // L (C, F) - Double Click
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // L (C, F)
+// Elapsed time: 15 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 0, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Colors, Device]", 1, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Shortcuts]", 2, false); // L (C, F)
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SettingsDialog_CLEAR_SEARCH, "Clear search"); // d (c, F)
+// Elapsed time: 21 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // L (C, F)
+// Elapsed time: 15 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Elaboration]", 2, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Implementation]", 4, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 5, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // L (C, F) - Node
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Code Completion]", 7, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Syntax Checking]", 8, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Tabs]", 9, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 10, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Verilog]", 11, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, VHDL]", 12, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Tcl]", 13, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Xdc]", 14, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Trigger State Machine]", 15, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Project]", 0, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Help]", 1, false); // L (C, F)
+selectComboBox(PAResourceQtoS.SettingsHelpPage_CHOOSE_PREFERRED_LANGUAGE_FOR_TOOLTIPS, "Chinese (Simplified)", 2); // e (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Settings"); // F (cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 9, "Distributed Memory Generator", 0, false); // O (Q, cp)
+// [GUI Memory]: 147 MB (+12578kb) [02:56:37]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Distributed Memory Generator ;  ; Production ; Included ; xilinx.com:ip:dist_mem_gen:8.0", 9, "Distributed Memory Generator", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cp): Customize IP: addNotify
+setText("Depth", "32"); // z (cU, r)
+setText("Data Width", "32"); // z (cU, r)
+selectRadioButton((HResource) null, "Simple Dual Port RAM"); // cO
+selectRadioButton((HResource) null, "Single Port RAM"); // cO
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "memory config", 0); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "memory config", 0); // cT (C, r)
+// Elapsed time: 504 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize IP"); // r (cp)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // Z
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "RF.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/RF.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/RF.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RF (RF.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RF (RF.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("RF.v", 256, 541); // cl (w, cp)
+// [GUI Memory]: 155 MB (+672kb) [03:06:07]
+// Elapsed time: 248 seconds
+selectCodeEditor("RF.v", 255, 598); // cl (w, cp)
+// Elapsed time: 64 seconds
+selectCodeEditor("RF.v", 330, 459); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("RF.v", 301, 538); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  304826 ms.
+// Elapsed time: 927 seconds
+selectCodeEditor("RF.v", 278, 563); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 92 MB. Current time: 7/25/24, 3:15:51 PM CST
+// Elapsed time: 13 seconds
+selectCodeEditor("RF.v", 222, 650); // cl (w, cp)
+selectCodeEditor("RF.v", 222, 650); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectCodeEditor("RF.v", 201, 450); // cl (w, cp)
+selectCodeEditor("RF.v", 140, 664); // cl (w, cp)
+// Elapsed time: 58 seconds
+selectCodeEditor("RF.v", 197, 603); // cl (w, cp)
+selectCodeEditor("RF.v", 426, 770); // cl (w, cp)
+selectCodeEditor("RF.v", 534, 585); // cl (w, cp)
+// Elapsed time: 1121 seconds
+selectCodeEditor("RF.v", 207, 720); // cl (w, cp)
+selectCodeEditor("RF.v", 83, 767); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectCodeEditor("RF.v", 287, 609); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("RF.v", 462, 289); // cl (w, cp)
+selectCodeEditor("RF.v", 481, 338); // cl (w, cp)
+selectCodeEditor("RF.v", 479, 285); // cl (w, cp)
+selectCodeEditor("RF.v", 485, 338); // cl (w, cp)
+selectCodeEditor("RF.v", 483, 295); // cl (w, cp)
+selectCodeEditor("RF.v", 482, 340); // cl (w, cp)
+selectCodeEditor("RF.v", 476, 263); // cl (w, cp)
+selectCodeEditor("RF.v", 462, 354); // cl (w, cp)
+selectCodeEditor("RF.v", 227, 500); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("RF.v", 398, 584); // cl (w, cp)
+selectCodeEditor("RF.v", 705, 551); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "WSEL.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/WSEL.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/WSEL.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("WSEL.v", 229, 594); // cl (w, cp)
+// Elapsed time: 214 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 282, 178); // cl (w, cp)
+selectCodeEditor("param.v", 526, 339); // cl (w, cp)
+selectCodeEditor("param.v", 68, 174); // cl (w, cp)
+typeControlKey((HResource) null, "param.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "WSEL.v", 6); // k (j, cp)
+selectCodeEditor("WSEL.v", 45, 502); // cl (w, cp)
+typeControlKey((HResource) null, "WSEL.v", 'v'); // cl (w, cp)
+selectCodeEditor("WSEL.v", 118, 617); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectCodeEditor("WSEL.v", 244, 518); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("WSEL.v", 276, 399); // cl (w, cp)
+selectCodeEditor("WSEL.v", 285, 669); // cl (w, cp)
+selectCodeEditor("WSEL.v", 198, 751); // cl (w, cp)
+selectCodeEditor("WSEL.v", 174, 717); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("WSEL.v", 225, 127); // cl (w, cp)
+typeControlKey((HResource) null, "WSEL.v", 'c'); // cl (w, cp)
+selectCodeEditor("WSEL.v", 155, 600); // cl (w, cp)
+typeControlKey((HResource) null, "WSEL.v", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU_B.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU_B.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "WSEL.v", 6); // k (j, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("WSEL.v", 138, 584); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 90 MB. Current time: 7/25/24, 3:45:52 PM CST
+// Elapsed time: 11 seconds
+selectCodeEditor("WSEL.v", 272, 438); // cl (w, cp)
+selectCodeEditor("WSEL.v", 554, 504); // cl (w, cp)
+selectCodeEditor("WSEL.v", 365, 647); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("WSEL.v", 490, 436); // cl (w, cp)
+selectCodeEditor("WSEL.v", 202, 447); // cl (w, cp)
+selectCodeEditor("WSEL.v", 378, 621); // cl (w, cp)
+selectCodeEditor("WSEL.v", 304, 722); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "WSEL.v", 6); // k (j, cp)
+selectCodeEditor("WSEL.v", 210, 496); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("WSEL.v", 73, 514); // cl (w, cp)
+selectCodeEditor("WSEL.v", 189, 385); // cl (w, cp)
+typeControlKey((HResource) null, "WSEL.v", 'v'); // cl (w, cp)
+selectCodeEditor("WSEL.v", 61, 556); // cl (w, cp)
+selectCodeEditor("WSEL.v", 67, 567); // cl (w, cp)
+selectCodeEditor("WSEL.v", 138, 445); // cl (w, cp)
+selectCodeEditor("WSEL.v", 635, 443); // cl (w, cp)
+selectCodeEditor("WSEL.v", 203, 221); // cl (w, cp)
+selectCodeEditor("WSEL.v", 629, 438); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 446, 114); // cl (w, cp)
+selectCodeEditor("param.v", 447, 131); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("param.v", 273, 247); // cl (w, cp)
+selectCodeEditor("param.v", 725, 117); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("WSEL.v", 537, 598); // cl (w, cp)
+selectCodeEditor("WSEL.v", 786, 609); // cl (w, cp)
+selectCodeEditor("WSEL.v", 653, 694); // cl (w, cp)
+selectCodeEditor("WSEL.v", 376, 676); // cl (w, cp)
+selectCodeEditor("WSEL.v", 486, 665); // cl (w, cp)
+selectCodeEditor("WSEL.v", 198, 639); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  14198 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 90 MB. Current time: 7/25/24, 4:15:56 PM CST
+// Elapsed time: 2544 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Controller (Controller.v)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Controller (Controller.v)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Controller.v", 1026, 389); // cl (w, cp)
+selectCodeEditor("Controller.v", 1026, 443); // cl (w, cp)
+selectCodeEditor("Controller.v", 1027, 506); // cl (w, cp)
+selectCodeEditor("Controller.v", 1030, 553); // cl (w, cp)
+selectCodeEditor("Controller.v", 1209, 554); // cl (w, cp)
+selectCodeEditor("Controller.v", 966, 457); // cl (w, cp)
+selectCodeEditor("Controller.v", 1178, 561); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SEXT.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/SEXT.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/SEXT.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SEXT (SEXT.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SEXT (SEXT.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("SEXT.v", 287, 564); // cl (w, cp)
+// Elapsed time: 75 seconds
+selectCodeEditor("SEXT.v", 373, 656); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("SEXT.v", 186, 616); // cl (w, cp)
+selectCodeEditor("SEXT.v", 186, 616); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 860, 227); // cl (w, cp)
+// Elapsed time: 307 seconds
+selectCodeEditor("param.v", 655, 279); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 91 MB. Current time: 7/25/24, 4:45:56 PM CST
+// Elapsed time: 1274 seconds
+selectCodeEditor("param.v", 229, 276); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Controller.v", 7); // k (j, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("Controller.v", 1171, 278); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SEXT.v", 8); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 716, 507); // cl (w, cp)
+typeControlKey((HResource) null, "param.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SEXT.v", 8); // k (j, cp)
+selectCodeEditor("SEXT.v", 241, 291); // cl (w, cp)
+typeControlKey((HResource) null, "SEXT.v", 'v'); // cl (w, cp)
+selectCodeEditor("SEXT.v", 262, 636); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("SEXT.v", 146, 221); // cl (w, cp)
+typeControlKey((HResource) null, "SEXT.v", 'c'); // cl (w, cp)
+selectCodeEditor("SEXT.v", 220, 554); // cl (w, cp)
+typeControlKey((HResource) null, "SEXT.v", 'v'); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("SEXT.v", 632, 553); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("SEXT.v", 756, 553); // cl (w, cp)
+selectCodeEditor("SEXT.v", 797, 581); // cl (w, cp)
+selectCodeEditor("SEXT.v", 590, 537); // cl (w, cp)
+selectCodeEditor("SEXT.v", 847, 565); // cl (w, cp)
+selectCodeEditor("SEXT.v", 892, 623); // cl (w, cp)
+selectCodeEditor("SEXT.v", 817, 548); // cl (w, cp)
+selectCodeEditor("SEXT.v", 1129, 556); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("SEXT.v", 223, 330); // cl (w, cp)
+typeControlKey((HResource) null, "SEXT.v", 'c'); // cl (w, cp)
+selectCodeEditor("SEXT.v", 1131, 459); // cl (w, cp)
+typeControlKey((HResource) null, "SEXT.v", 'v'); // cl (w, cp)
+// Elapsed time: 282 seconds
+selectCodeEditor("SEXT.v", 768, 448); // cl (w, cp)
+selectCodeEditor("SEXT.v", 1435, 447); // cl (w, cp)
+selectCodeEditor("SEXT.v", 751, 448); // cl (w, cp)
+selectCodeEditor("SEXT.v", 813, 551); // cl (w, cp)
+selectCodeEditor("SEXT.v", 747, 435); // cl (w, cp)
+selectCodeEditor("SEXT.v", 757, 442); // cl (w, cp)
+selectCodeEditor("SEXT.v", 768, 437); // cl (w, cp)
+selectCodeEditor("SEXT.v", 747, 533); // cl (w, cp)
+selectCodeEditor("SEXT.v", 745, 488); // cl (w, cp)
+// Elapsed time: 236 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "PC.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/PC.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/PC.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC (PC.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PC (PC.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("PC.v", 109, 599); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("PC.v", 223, 653); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 91 MB. Current time: 7/25/24, 5:15:56 PM CST
+// Elapsed time: 239 seconds
+selectCodeEditor("PC.v", 303, 765); // cl (w, cp)
+selectCodeEditor("PC.v", 199, 508); // cl (w, cp)
+selectCodeEditor("PC.v", 288, 780); // cl (w, cp)
+selectCodeEditor("PC.v", 266, 750); // cl (w, cp)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "NPC.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/NPC.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/NPC.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, NPC (NPC.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, NPC (NPC.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("NPC.v", 158, 589); // cl (w, cp)
+// Elapsed time: 230 seconds
+selectCodeEditor("NPC.v", 226, 659); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 731, 226); // cl (w, cp)
+typeControlKey((HResource) null, "param.v", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, NPC (NPC.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, NPC (NPC.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("NPC.v", 184, 159); // cl (w, cp)
+typeControlKey((HResource) null, "NPC.v", 'v'); // cl (w, cp)
+selectCodeEditor("NPC.v", 243, 590); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("NPC.v", 148, 330); // cl (w, cp)
+typeControlKey((HResource) null, "NPC.v", 'c'); // cl (w, cp)
+selectCodeEditor("NPC.v", 224, 719); // cl (w, cp)
+typeControlKey((HResource) null, "NPC.v", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("NPC.v", 168, 551); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("NPC.v", 516, 494); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("NPC.v", 198, 332); // cl (w, cp)
+selectCodeEditor("NPC.v", 316, 712); // cl (w, cp)
+// Elapsed time: 388 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Controller.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 10); // k (j, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("NPC.v", 547, 562); // cl (w, cp)
+// Elapsed time: 85 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("myCPU.v", 163, 441); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_DRAM : DRAM (DRAM.xci)]", 10); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Show IP Hierarchy"); // A (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 28 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("myCPU.v", 401, 182); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("myCPU.v", 171, 656); // cl (w, cp)
+// k (cp): Text Changed: addNotify
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: FILE_SET_CHANGE
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: FILE_SET_CHANGE
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: FILE_SET_CHANGE
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Text Changed"); // k (cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Controller.v", 417, 331); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: FILE_SET_CHANGE
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: DG_GRAPH_STALE
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 3); // k (j, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Clkgen : cpuclk (cpuclk.xci)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Clkgen : cpuclk (cpuclk.xci)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cp)
+dismissDialog("Re-customize IP"); // r (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 9, false); // B (D, cp)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (f, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("myCPU.v", 210, 703); // cl (w, cp)
+selectCodeEditor("myCPU.v", 283, 655); // cl (w, cp)
+selectCodeEditor("myCPU.v", 283, 655); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+selectCodeEditor("myCPU.v", 282, 460); // cl (w, cp)
+// Elapsed time: 89 seconds
+selectCodeEditor("myCPU.v", 160, 229); // cl (w, cp)
+// Elapsed time: 40 seconds
+selectCodeEditor("myCPU.v", 302, 279); // cl (w, cp)
+typeControlKey((HResource) null, "myCPU.v", 'c'); // cl (w, cp)
+selectCodeEditor("myCPU.v", 237, 657); // cl (w, cp)
+typeControlKey((HResource) null, "myCPU.v", 'v'); // cl (w, cp)
+selectCodeEditor("myCPU.v", 294, 348); // cl (w, cp)
+typeControlKey((HResource) null, "myCPU.v", 'c'); // cl (w, cp)
+selectCodeEditor("myCPU.v", 232, 709); // cl (w, cp)
+typeControlKey((HResource) null, "myCPU.v", 'v'); // cl (w, cp)
+// Elapsed time: 74 seconds
+selectCodeEditor("myCPU.v", 496, 598); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("myCPU.v", 492, 671); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("myCPU.v", 530, 704); // cl (w, cp)
+// [GUI Memory]: 163 MB (+131kb) [05:55:38]
+// Elapsed time: 54 seconds
+selectCodeEditor("myCPU.v", 638, 750); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("myCPU.v", 540, 768); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("myCPU.v", 249, 757); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 102 MB. Current time: 7/25/24, 5:45:57 PM CST
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 21, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 21, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+selectCodeEditor("myCPU.v", 162, 693); // cl (w, cp)
+selectCodeEditor("myCPU.v", 155, 751); // cl (w, cp)
+selectCodeEditor("myCPU.v", 193, 772); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU_B (ALU_B.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU_B (ALU_B.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 21, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, WSEL (WSEL.v)]", 21, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU_B.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "WSEL.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("myCPU.v", 209, 345); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  652979 ms.
+// Elapsed time: 1278 seconds
+selectCodeEditor("myCPU.v", 530, 556); // cl (w, cp)
+// Elapsed time: 258 seconds
+selectCodeEditor("myCPU.v", 223, 546); // cl (w, cp)
+selectCodeEditor("myCPU.v", 521, 455); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 102 MB. Current time: 7/25/24, 6:16:00 PM CST
+// Elapsed time: 778 seconds
+selectCodeEditor("myCPU.v", 178, 592); // cl (w, cp)
+selectCodeEditor("myCPU.v", 250, 609); // cl (w, cp)
+selectCodeEditor("myCPU.v", 258, 640); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("myCPU.v", 205, 660); // cl (w, cp)
+// Elapsed time: 71 seconds
+selectCodeEditor("myCPU.v", 216, 382); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("myCPU.v", 283, 610); // cl (w, cp)
+selectCodeEditor("myCPU.v", 216, 661); // cl (w, cp)
+selectCodeEditor("myCPU.v", 312, 701); // cl (w, cp)
+selectCodeEditor("myCPU.v", 213, 715); // cl (w, cp)
+selectCodeEditor("myCPU.v", 279, 331); // cl (w, cp)
+typeControlKey((HResource) null, "myCPU.v", 'c'); // cl (w, cp)
+selectCodeEditor("myCPU.v", 216, 381); // cl (w, cp)
+typeControlKey((HResource) null, "myCPU.v", 'v'); // cl (w, cp)
+selectCodeEditor("myCPU.v", 533, 438); // cl (w, cp)
+selectCodeEditor("myCPU.v", 397, 514); // cl (w, cp)
+selectCodeEditor("myCPU.v", 249, 544); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myCPU.v]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myCPU.v]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "WSEL.v", 5); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 3); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 8); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myCPU.v]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myCPU.v]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("myCPU.v", 480, 645); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("myCPU.v", 509, 561); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cQ, cp)
+selectCodeEditor("myCPU.v", 1296, 261); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("myCPU.v", 259, 373); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("myCPU.v", 545, 553); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : xil_defaultlib.myCPU]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myCPU.v]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myCPU.v]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 5, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near endmodule. [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/myCPU.v:48]. ]", 5, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\myCPU.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("myCPU.v", 206, 675); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 6); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 383, 136); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU_B.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 3); // k (j, cp)
+selectCodeEditor("myCPU.v", 427, 615); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 

@@ -48,7 +48,7 @@ module Controller(
     end
     always @(*)begin
         casez({funct7,funct3,opcode})
-            {7'bxxxxxxx,3'b011,7'b0010011}:sext_op = `SEXT_OP_I_U;
+            {7'bxxxxxxx,3'b011,7'b0010011}:sext_op = `SEXT_OP_I_S;
             {7'bxxxxxxx,3'bxxx,7'b0010011}:sext_op = `SEXT_OP_I_S;
             {7'bxxxxxxx,3'bxxx,7'b0000011}:sext_op = `SEXT_OP_I_S;
             {7'bxxxxxxx,3'bxxx,7'b1100111}:sext_op = `SEXT_OP_I_S;
@@ -89,10 +89,10 @@ module Controller(
     end
     always @(*)begin
         casez({funct7,funct3,opcode})
-            {7'bxxxxxxx,3'bxxx,7'b110x111}:rf_wsel = `RF_WSEL_PC4;
-            {7'bxxxxxxx,3'bxxx,7'b0110111}:rf_wsel = `RF_WSEL_SEXT;
-            {7'bxxxxxxx,3'bxxx,7'b0x10011}:rf_wsel = `RF_WSEL_ALU;
-            {7'bxxxxxxx,3'bxxx,7'b0000011}:rf_wsel = `RF_WSEL_DRAM;
+            {7'bxxxxxxx,3'bxxx,7'b110x111}:rf_wsel = `WSEL_PC4;
+            {7'bxxxxxxx,3'bxxx,7'b0110111}:rf_wsel = `WSEL_SEXT;
+            {7'bxxxxxxx,3'bxxx,7'b0x10011}:rf_wsel = `WSEL_ALU;
+            {7'bxxxxxxx,3'bxxx,7'b0000011}:rf_wsel = `WSEL_DRAM;
         endcase
     end
 endmodule
