@@ -35,11 +35,11 @@ module WSEL(
     );
     always @(*)begin
         case(op)
-            `WSEL_PC4:data <= pc4;
-            `WSEL_SEXT:data <= sext;
-            `WSEL_ALU:data <= alu;
-            `WSEL_DRAM:data <= dram;
-            default:data <= `ZERO_32;
+            `WSEL_PC4:data = pc4;
+            `WSEL_SEXT:data = sext;
+            `WSEL_ALU:data = alu;
+            `WSEL_DRAM:data = dram;
+            default:data = `ZERO_32;
         endcase
     end
 endmodule

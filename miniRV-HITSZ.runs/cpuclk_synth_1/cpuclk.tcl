@@ -25,14 +25,14 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/wt [current_project]
-set_property parent.project_path F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.xpr [current_project]
+set_property webtalk.parent_dir F:/miniRV-HITSZ/miniRV-HITSZ.cache/wt [current_project]
+set_property parent.project_path F:/miniRV-HITSZ/miniRV-HITSZ.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.cache/ip [current_project]
+set_property ip_output_repo f:/miniRV-HITSZ/miniRV-HITSZ.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci
+read_ip -quiet F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci
 set_property used_in_implementation false [get_files -all f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_board.xdc]
 set_property used_in_implementation false [get_files -all f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xdc]
 set_property used_in_implementation false [get_files -all f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_ooc.xdc]
@@ -49,7 +49,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1 -new_name cpuclk -ip [get_ips cpuclk]]
+set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1 -new_name cpuclk -ip [get_ips cpuclk]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -90,32 +90,32 @@ write_checkpoint -force -noxdef cpuclk.dcp
 create_report "cpuclk_synth_1_synth_report_utilization_0" "report_utilization -file cpuclk_utilization_synth.rpt -pb cpuclk_utilization_synth.pb"
 
 if { [catch {
-  file copy -force F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/cpuclk.dcp f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.dcp
+  file copy -force F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/cpuclk.dcp F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v
+  write_verilog -force -mode synth_stub F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.vhdl
+  write_vhdl -force -mode synth_stub F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.v
+  write_verilog -force -mode funcsim F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -125,47 +125,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/cpuclk.dcp f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.dcp
+  file copy -force F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/cpuclk.dcp F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/cpuclk_stub.v f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v
+  file rename -force F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/cpuclk_stub.v F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/cpuclk_stub.vhdl f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.vhdl
+  file rename -force F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/cpuclk_stub.vhdl F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/cpuclk_sim_netlist.v f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.v
+  file rename -force F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/cpuclk_sim_netlist.v F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/cpuclk_synth_1/cpuclk_sim_netlist.vhdl f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.vhdl
+  file rename -force F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/cpuclk_sim_netlist.vhdl F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ip/cpuclk]} {
+if {[file isdir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ip/cpuclk]} {
   catch { 
-    file copy -force f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ip/cpuclk
+    file copy -force F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ip/cpuclk
   }
 }
 
-if {[file isdir F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ip/cpuclk]} {
+if {[file isdir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ip/cpuclk]} {
   catch { 
-    file copy -force f:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.vhdl F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.ip_user_files/ip/cpuclk
+    file copy -force F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.vhdl F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ip/cpuclk
   }
 }
 file delete __synthesis_is_running__

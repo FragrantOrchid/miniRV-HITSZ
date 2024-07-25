@@ -70,17 +70,63 @@ module myCPU (
         .din(inst[31:7]),
         .ext(SEXT_ext)  
     );
+    WSEL myWSEL(
+        .op(CTRL_rf_wsel),
+        .pc4(NPC_pc4),
+        .sext(SEXT_ext),
+        .alu(ALU_C),
+        .dram(Bus_rdata),
+        .data(WSEL_data)
+    );
+    Controller myController(
+        .opcode(inst[6:0]),
+        .funct3(inst[14:12]),
+        .funct7(inst[31:25]),
+        .sext_op(CTRL_sext_op),
+        .npc_op(CTRL_npc_op),
+        .ram_we(CTRL_ram_we),
+        .alu_op(CTRL_alu_op),
+        .alub_sel(CTRL_alub_sel),
+        .rf_we(CTRL_rf_we),
+        .rf_wsel(CTRL_rf_wsel)
+    );
+    RF myRF(
+        .clk(cpu_clk),
+        .rR1(inst[19:15]),
+        .rR2(inst[24:20]),
+        .wR(inst[11:7]),
+        .we(CTRL_rf_we),
+        .wD(WSEL_data),
+        .rD1(RF_rD1),
+        .rD2(RF_rD2)
+    );
+    ALU_B myALU_B(
+        .A(RF_rD1),
+        .B(RF_rD2),
+        .op(CTRL_alub_sel),
+        .C(ALU_B_C)
+    );
     
+    ALU myALU(
+        .op(CTRL_alu_op),
+        .A(RF_rD1),
+        .B(ALU_B_C),
+        .C(ALU_C),
+        .f(ALU_f)
+    );
+    assign Bus_addr = ALU_C;
+    assign Bus_we = CTRL_ram_we;
+    assign Bus_wdata = RF_rD2;
     
     
 
 `ifdef RUN_TRACE
     // Debug Interface
-    assign debug_wb_have_inst = /* TODO */;
-    assign debug_wb_pc        = /* TODO */;
-    assign debug_wb_ena       = /* TODO */;
-    assign debug_wb_reg       = /* TODO */;
-    assign debug_wb_value     = /* TODO */;
+    assign debug_wb_have_inst = 1'b1;
+    assign debug_wb_pc        = PC_pc;
+    assign debug_wb_ena       = CTRL_rf_wsel;
+    assign debug_wb_reg       = inst[11:7];
+    assign debug_wb_value     = WSEL_data;
 `endif
 
 endmodule

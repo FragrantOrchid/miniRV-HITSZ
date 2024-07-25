@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/comp2012/Lab2-单周期CPU及SoC设计/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.runs/DRAM_synth_1'
+HD_PWD='F:/miniRV-HITSZ/miniRV-HITSZ.runs/DRAM_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

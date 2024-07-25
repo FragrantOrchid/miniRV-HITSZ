@@ -32,8 +32,8 @@ module RF(
     );
     reg [31:0] regs [31:0];
     always @(*)begin
-        rD1 <= regs[rD1];
-        rD2 <= regs[rD2];
+        rD1 = regs[rD1];
+        rD2 = regs[rD2];
     end
     always @(posedge clk)begin
         if(we && wR != 5'b00000)begin

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="DRAM_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1721199555">
+<GenRun Id="DRAM_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1721920699">
   <File Type="PA-TCL" Name="DRAM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DRAM_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="DRAM_reports.tcl"/>
   <File Type="RDS-RDS" Name="DRAM.vds"/>
+  <File Type="RDS-UTIL" Name="DRAM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DRAM_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="DRAM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DRAM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DRAM_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DRAM">
     <File Path="$PPRDIR/../comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/DRAM/DRAM.xci">
       <FileInfo>
