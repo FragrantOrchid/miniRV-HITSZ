@@ -23,10 +23,10 @@
 module PC(
     input wire clk,
     input wire rst,
-    input wire din,
+    input wire [31:0]din,
     output reg [31:0] pc
     );
     always @(posedge clk or posedge rst)begin
-        pc <= rst?`ZERO_32:din;
+        pc <= rst?32'hFFFFFFFC:din;
     end
 endmodule

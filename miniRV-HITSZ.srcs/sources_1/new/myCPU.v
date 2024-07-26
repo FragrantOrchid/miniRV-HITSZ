@@ -101,8 +101,8 @@ module myCPU (
         .rD2(RF_rD2)
     );
     ALU_B myALU_B(
-        .A(RF_rD1),
-        .B(RF_rD2),
+        .A(RF_rD2),
+        .B(SEXT_ext),
         .op(CTRL_alub_sel),
         .C(ALU_B_C)
     );
@@ -124,7 +124,7 @@ module myCPU (
     // Debug Interface
     assign debug_wb_have_inst = 1'b1;
     assign debug_wb_pc        = PC_pc;
-    assign debug_wb_ena       = CTRL_rf_wsel;
+    assign debug_wb_ena       = CTRL_rf_we;
     assign debug_wb_reg       = inst[11:7];
     assign debug_wb_value     = WSEL_data;
 `endif

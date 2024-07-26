@@ -34,7 +34,7 @@ module SEXT(
     );
     always @(*)begin
         case(op)
-            `SEXT_OP_I_S:ext = {{20{din[31]}},din[31:20]};
+            `SEXT_OP_I:ext = {{20{din[31]}},din[31:20]};
             `SEXT_OP_S:ext = {{20{din[31]}},din[31:25],din[11:7]};
             `SEXT_OP_B:ext = {{20{din[31]}},din[31],din[7],din[30:25],din[11:8]};
             `SEXT_OP_U:ext = {din[31:12],12'h000};

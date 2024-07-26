@@ -26,5 +26,5 @@ module ALU_B(
     input wire op,
     output wire [31:0] C
     );
-    assign C = (op == `ALUB_RD2)? A:B; 
+    assign C = (op == 1'b0)? A:B; 
 endmodule

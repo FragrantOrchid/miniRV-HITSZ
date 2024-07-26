@@ -24,16 +24,16 @@ module RF(
     input wire clk, 
     input wire [4:0] rR1,
     input wire [4:0] rR2,
-    input wire wR,
+    input wire [4:0]wR,
     input wire we,
-    input wire wD,
-    output reg rD1,
-    output reg rD2
+    input wire [31:0]wD,
+    output reg [31:0] rD1,
+    output reg [31:0] rD2
     );
     reg [31:0] regs [31:0];
     always @(*)begin
-        rD1 = regs[rD1];
-        rD2 = regs[rD2];
+        rD1 = regs[rR1];
+        rD2 = regs[rR2];
     end
     always @(posedge clk)begin
         if(we && wR != 5'b00000)begin

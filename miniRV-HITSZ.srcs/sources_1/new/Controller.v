@@ -47,16 +47,16 @@ module Controller(
             default:alu_op = {1'b0,3'b000};        endcase  
     end
     always @(*)begin
-        casez({funct7,funct3,opcode})
-            {7'bxxxxxxx,3'b011,7'b0010011}:sext_op = `SEXT_OP_I_S;
-            {7'bxxxxxxx,3'bxxx,7'b0010011}:sext_op = `SEXT_OP_I_S;
-            {7'bxxxxxxx,3'bxxx,7'b0000011}:sext_op = `SEXT_OP_I_S;
-            {7'bxxxxxxx,3'bxxx,7'b1100111}:sext_op = `SEXT_OP_I_S;
-            {7'bxxxxxxx,3'bxxx,7'b0100011}:sext_op = `SEXT_OP_S;
-            {7'bxxxxxxx,3'bxxx,7'b1100011}:sext_op = `SEXT_OP_B;
-            {7'bxxxxxxx,3'bxxx,7'b0x10111}:sext_op = `SEXT_OP_U;
-            {7'bxxxxxxx,3'bxxx,7'b1101111}:sext_op = `SEXT_OP_J;
-            default:sext_op = 3'b000;
+        case(opcode)
+            7'b0010011:sext_op = `SEXT_OP_I;
+            7'b0000011:sext_op = `SEXT_OP_I;
+            7'b1100111:sext_op = `SEXT_OP_I;
+            7'b0100011:sext_op = `SEXT_OP_S;
+            7'b1100011:sext_op = `SEXT_OP_B;
+            7'b0110111:sext_op = `SEXT_OP_U;
+            7'b0010111:sext_op = `SEXT_OP_U;
+            7'b1101111:sext_op = `SEXT_OP_J;
+            default:sext_op = `SEXT_OP_I;
         endcase
     end
     always @(*)begin
@@ -74,17 +74,26 @@ module Controller(
     end
     
     always @(*)begin
-        casez({funct7,funct3,opcode})
-            {7'bxxxxxxx,3'bxxx,7'b0110011}:alub_sel = `ALUB_RD2;
-            default:alub_sel = `ALUB_EXT;
+        case(opcode)
+            7'b0110011:alub_sel = 1'b0;
+            7'b1100011:alub_sel = 1'b0;
+            7'b0100011:alub_sel = 1'b0;
+            default:alub_sel = 1'b1; 
         endcase
     end
     
     always @(*)begin
-        casez({funct7,funct3,opcode})
-            {7'bxxxxxxx,3'bxxx,7'b0100011}:rf_we = 1'b0;
-            {7'bxxxxxxx,3'bxxx,7'b1100011}:rf_we = 1'b0;
-            default:rf_we = 1'b1;
+        case(opcode)
+            7'b0110011:rf_we = 1'b1;
+            7'b0010011:rf_we = 1'b1;
+            7'b0000011:rf_we = 1'b1;
+            7'b1100111:rf_we = 1'b1;
+            7'b0100011:rf_we = 1'b0;
+            7'b1100011:rf_we = 1'b0;
+            7'b0110111:rf_we = 1'b1;
+            7'b0010111:rf_we = 1'b1;
+            7'b1101111:rf_we = 1'b1;
+            default:rf_we = 1'b0;
         endcase
     end
     always @(*)begin
@@ -93,6 +102,7 @@ module Controller(
             {7'bxxxxxxx,3'bxxx,7'b0110111}:rf_wsel = `WSEL_SEXT;
             {7'bxxxxxxx,3'bxxx,7'b0x10011}:rf_wsel = `WSEL_ALU;
             {7'bxxxxxxx,3'bxxx,7'b0000011}:rf_wsel = `WSEL_DRAM;
+            default:rf_wsel = `WSEL_ALU;
         endcase
     end
 endmodule
