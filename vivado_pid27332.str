@@ -1,0 +1,2065 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 27332
+License: Customer
+
+Current time: 	Sat Jul 27 10:05:02 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1600
+Screen resolution (DPI): 144
+Available screens: 2
+Available disk space: 281 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	FragrantOrchid
+User home directory: C:/Users/FragrantOrchid
+User working directory: F:/miniRV-HITSZ
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/FragrantOrchid/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/FragrantOrchid/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/FragrantOrchid/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/miniRV-HITSZ/vivado.log
+Vivado journal file location: 	F:/miniRV-HITSZ/vivado.jou
+Engine tmp dir: 	F:/miniRV-HITSZ/.Xil/Vivado-27332-ClientOrchid
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	156 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 700 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 94 MB (+96189kb) [00:00:06]
+// [Engine Memory]: 584 MB (+461412kb) [00:00:06]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\miniRV-HITSZ\miniRV-HITSZ.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/miniRV-HITSZ/miniRV-HITSZ.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 115 MB (+16996kb) [00:00:10]
+// [Engine Memory]: 753 MB (+146284kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2375 ms.
+// Tcl Message: open_project F:/miniRV-HITSZ/miniRV-HITSZ.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 802 MB. GUI used memory: 63 MB. Current time: 7/27/24, 10:05:06 AM CST
+// [Engine Memory]: 802 MB (+11992kb) [00:00:12]
+// Tcl Message: open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 837.848 ; gain = 193.469 
+// [Engine Memory]: 931 MB (+92877kb) [00:00:13]
+// Project name: miniRV-HITSZ; location: F:/miniRV-HITSZ; part: xc7a100tfgg484-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 981 MB (+3893kb) [00:00:15]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 123 MB (+2164kb) [00:08:21]
+// Elapsed time: 822 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 137 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 7, false); // B (D, cp)
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, defines.vh]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, defines.vh]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "defines.vh", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, defines.vh]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, defines.vh]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("defines.vh", 580, 359); // cl (w, cp)
+selectCodeEditor("defines.vh", 734, 397); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("defines.vh", 709, 548); // cl (w, cp)
+selectCodeEditor("defines.vh", 698, 495); // cl (w, cp)
+selectCodeEditor("defines.vh", 692, 452); // cl (w, cp)
+selectCodeEditor("defines.vh", 707, 402); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v), myPC : PC (PC.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Core_cpu : myCPU (myCPU.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Bridge : Bridge (Bridge.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("miniRV_SoC.v", 524, 184); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, defines.vh]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, defines.vh]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("defines.vh", 1, 72); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "defines.vh", 3); // k (j, cp)
+selectCodeEditor("defines.vh", 495, 111); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "myCPU.v", 4); // k (j, cp)
+// [GUI Memory]: 129 MB (+448kb) [00:20:02]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("miniRV_SoC.v", 377, 435); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 191, 452); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 737, 288); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 377, 503); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 378, 434); // cl (w, cp)
+// Elapsed time: 92 seconds
+selectCodeEditor("miniRV_SoC.v", 665, 365); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6); // B (D, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("miniRV_SoC.v", 525, 195); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_DRAM : DRAM (DRAM.xci)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_DRAM : DRAM (DRAM.xci)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 70 MB. Current time: 7/27/24, 10:28:50 AM CST
+dismissDialog("Re-customize IP"); // r (cp)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "defines.vh", 3); // k (j, cp)
+selectCodeEditor("defines.vh", 1052, 521); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 145 seconds
+selectCodeEditor("miniRV_SoC.v", 627, 451); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 90 seconds
+selectCodeEditor("miniRV_SoC.v", 633, 453); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 337, 348); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 240, 69); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 517, 600); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 288, 131); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 522, 660); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 161, 242); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 527, 703); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 287, 298); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 521, 753); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("miniRV_SoC.v", 639, 192); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 679, 500); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 512, 506); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("miniRV_SoC.v", 440, 636); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 171, 547); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 318, 558); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 170, 551); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 531, 334); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 933, 363); // cl (w, cp)
+// Elapsed time: 204 seconds
+selectCodeEditor("miniRV_SoC.v", 1111, 389); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Led_"); // Y (Q, F)
+dismissDialog("Create Source File"); // F (c)
+// 'h' command handler elapsed time: 14 seconds
+dismissDialog("Add Sources"); // c (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Led_Devices"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Led_Devices.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Led_Devices.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Led_Devices (Led_Devices.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Led_Devices (Led_Devices.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Led_Devices.v", 201, 591); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("Led_Devices.v", 394, 610); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 402, 654); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectCodeEditor("Led_Devices.v", 420, 621); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 210, 605); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 202, 621); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 203, 556); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 274, 649); // cl (w, cp)
+// Elapsed time: 78 seconds
+selectCodeEditor("Led_Devices.v", 408, 612); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 349, 660); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 14 seconds
+selectCodeEditor("miniRV_SoC.v", 316, 551); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 250, 552); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Led_Devices (Led_Devices.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Led_Devices (Led_Devices.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Led_Devices.v", 69, 180); // cl (w, cp)
+typeControlKey((HResource) null, "Led_Devices.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectCodeEditor("Led_Devices.v", 580, 480); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 580, 445); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 154 seconds
+selectCodeEditor("miniRV_SoC.v", 611, 388); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 442, 400); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("miniRV_SoC.v", 405, 472); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 404, 482); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 435, 604); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectCodeEditor("Led_Devices.v", 500, 452); // cl (w, cp)
+typeControlKey((HResource) null, "Led_Devices.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 272, 543); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 241, 445); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 238, 345); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 232, 449); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 522, 454); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 527, 554); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 271, 568); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 521, 446); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 219, 440); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 513, 444); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 527, 669); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 232, 415); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 244, 439); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 213, 551); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 5); // k (j, cp)
+selectCodeEditor("Led_Devices.v", 726, 282); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 592, 148); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6); // B (D, cp)
+selectCodeEditor("miniRV_SoC.v", 741, 315); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectCodeEditor("miniRV_SoC.v", 362, 511); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectCodeEditor("Bridge.v", 205, 439); // cl (w, cp)
+selectCodeEditor("Bridge.v", 807, 463); // cl (w, cp)
+// Elapsed time: 166 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "defines.vh", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 443, 273); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("miniRV_SoC.v", 398, 336); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectCodeEditor("miniRV_SoC.v", 437, 499); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("miniRV_SoC.v", 771, 341); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Bridge.v", 439, 445); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Bridge.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("miniRV_SoC.v", 266, 551); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 71 MB. Current time: 7/27/24, 10:58:50 AM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Buttons"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Buttons.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Buttons.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Buttons (Buttons.v)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Buttons (Buttons.v)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Buttons.v", 312, 563); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Buttons.v", 511, 719); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectCodeEditor("Buttons.v", 185, 599); // cl (w, cp)
+selectCodeEditor("Buttons.v", 185, 599); // cl (w, cp)
+// Elapsed time: 210 seconds
+selectCodeEditor("Buttons.v", 202, 546); // cl (w, cp)
+selectCodeEditor("Buttons.v", 325, 739); // cl (w, cp)
+selectCodeEditor("Buttons.v", 357, 766); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 407, 329); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("miniRV_SoC.v", 231, 563); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("miniRV_SoC.v", 435, 709); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectCodeEditor("Buttons.v", 761, 221); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 727, 588); // cl (w, cp)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 184, 766); // cl (w, cp)
+// Elapsed time: 327 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("miniRV_SoC.v", 690, 619); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 262, 642); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 163, 597); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 523, 281); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 166, 670); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 530, 331); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 295, 713); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 526, 380); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 291, 766); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 527, 437); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 215, 645); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("miniRV_SoC.v", 206, 343); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("miniRV_SoC.v", 745, 342); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 150, 300); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 311, 76); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 233, 488); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 557, 503); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 932, 501); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 714, 614); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 236, 494); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 433, 86); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 235, 493); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 535, 504); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 574, 503); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 528, 191); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 245, 544); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 646, 568); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 646, 542); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 523, 239); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 275, 592); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 688, 587); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Buttons.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 444, 499); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 285, 490); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 308, 428); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 266 seconds
+selectCodeEditor("miniRV_SoC.v", 382, 533); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 431, 446); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 748, 495); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("miniRV_SoC.v", 437, 399); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Switches"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Switches.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Switches.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Switches (Switches.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Switches (Switches.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Switches.v", 326, 550); // cl (w, cp)
+// Elapsed time: 52 seconds
+selectCodeEditor("Switches.v", 138, 622); // cl (w, cp)
+selectCodeEditor("Switches.v", 146, 605); // cl (w, cp)
+// Elapsed time: 169 seconds
+selectCodeEditor("Switches.v", 279, 658); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 520, 453); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("miniRV_SoC.v", 684, 493); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 71 MB. Current time: 7/27/24, 11:28:50 AM CST
+// Elapsed time: 270 seconds
+selectCodeEditor("miniRV_SoC.v", 733, 444); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 185, 564); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 220, 558); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Switches.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 148, 648); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 163, 342); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 233, 658); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 610, 649); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 168, 389); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 259, 717); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 287, 452); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 251, 750); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 734, 751); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Switches.v", 6); // k (j, cp)
+selectCodeEditor("Switches.v", 404, 451); // cl (w, cp)
+typeControlKey((HResource) null, "Switches.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 241, 757); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 249, 773); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 413, 752); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Switches.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 182, 774); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("miniRV_SoC.v", 439, 280); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 322, 442); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 520, 497); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 285, 86); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 253, 392); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 644, 517); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 327, 444); // cl (w, cp)
+// Elapsed time: 99 seconds
+selectCodeEditor("miniRV_SoC.v", 345, 505); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("miniRV_SoC.v", 442, 235); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("miniRV_SoC.v", 620, 655); // cl (w, cp)
+// Elapsed time: 156 seconds
+selectCodeEditor("miniRV_SoC.v", 563, 467); // cl (w, cp)
+// Elapsed time: 492 seconds
+selectCodeEditor("miniRV_SoC.v", 495, 338); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v)]", 6, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Digital.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital (Digital.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital (Digital.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Digital.v", 310, 563); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("Digital.v", 111, 599); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("Digital.v", 112, 605); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Digital.v", 277, 511); // cl (w, cp)
+selectCodeEditor("Digital.v", 378, 626); // cl (w, cp)
+selectCodeEditor("Digital.v", 363, 654); // cl (w, cp)
+// Elapsed time: 136 seconds
+selectCodeEditor("Digital.v", 228, 611); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myLed : Led_Devices (Led_Devices.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myLed : Led_Devices (Led_Devices.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Led_Devices.v", 377, 497); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Digital.v", 300, 752); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("Digital.v", 311, 661); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 8); // k (j, cp)
+selectCodeEditor("Led_Devices.v", 699, 615); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 787, 598); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 306, 607); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("Led_Devices.v", 700, 623); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 882, 574); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 700, 607); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("Led_Devices.v", 750, 743); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 890, 606); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 900, 679); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Led_Devices.v", 907, 603); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("Led_Devices.v", 385, 720); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("Led_Devices.v", 332, 602); // cl (w, cp)
+typeControlKey((HResource) null, "Led_Devices.v", 'c'); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 439, 710); // cl (w, cp)
+typeControlKey((HResource) null, "Led_Devices.v", 'v'); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 327, 597); // cl (w, cp)
+selectCodeEditor("Led_Devices.v", 567, 706); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 92 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectCodeEditor("Digital.v", 145, 611); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("Digital.v", 239, 625); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("Digital.v", 143, 682); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 71 MB. Current time: 7/27/24, 11:58:51 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4114 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4093 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1622629 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 71 MB. Current time: 7/27/24, 12:33:08 PM CST
+// Elapsed time: 2413 seconds
+selectCodeEditor("Digital.v", 255, 772); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("Digital.v", 142, 666); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 32 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Digital_trans"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 36 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital_trans.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital_trans.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital (Digital.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital (Digital.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital_trans (Digital_trans.v)]", 16, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital_trans (Digital_trans.v)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Digital_trans.v", 253, 609); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("Digital_trans.v", 240, 683); // cl (w, cp)
+selectCodeEditor("Digital_trans.v", 239, 726); // cl (w, cp)
+// Elapsed time: 138 seconds
+selectCodeEditor("Digital_trans.v", 275, 752); // cl (w, cp)
+selectCodeEditor("Digital_trans.v", 355, 552); // cl (w, cp)
+// Elapsed time: 205 seconds
+selectCodeEditor("Digital_trans.v", 317, 193); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("Digital_trans.v", 346, 539); // cl (w, cp)
+// Elapsed time: 19 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 36 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 90 seconds
+selectCodeEditor("Digital_trans.v", 567, 764); // cl (w, cp)
+// Elapsed time: 184 seconds
+selectCodeEditor("Digital_trans.v", 598, 539); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectCodeEditor("Digital.v", 878, 220); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectCodeEditor("Digital_trans.v", 954, 333); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1594236 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 72 MB. Current time: 7/27/24, 1:28:53 PM CST
+// Elapsed time: 2381 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectCodeEditor("Digital.v", 247, 592); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("Digital.v", 344, 655); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("Digital.v", 269, 701); // cl (w, cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("Digital.v", 317, 561); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("Digital.v", 653, 412); // cl (w, cp)
+selectCodeEditor("Digital.v", 625, 448); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("Digital.v", 198, 674); // cl (w, cp)
+selectCodeEditor("Digital.v", 405, 499); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectCodeEditor("Digital.v", 363, 383); // cl (w, cp)
+selectCodeEditor("Digital.v", 394, 495); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("Digital.v", 708, 508); // cl (w, cp)
+selectCodeEditor("Digital.v", 375, 491); // cl (w, cp)
+selectCodeEditor("Digital.v", 745, 526); // cl (w, cp)
+selectCodeEditor("Digital.v", 703, 664); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("Digital.v", 675, 721); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("Digital.v", 311, 576); // cl (w, cp)
+selectCodeEditor("Digital.v", 432, 527); // cl (w, cp)
+selectCodeEditor("Digital.v", 602, 346); // cl (w, cp)
+selectCodeEditor("Digital.v", 663, 478); // cl (w, cp)
+selectCodeEditor("Digital.v", 307, 631); // cl (w, cp)
+selectCodeEditor("Digital.v", 171, 652); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("Digital.v", 160, 129); // cl (w, cp)
+selectCodeEditor("Digital.v", 438, 284); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Digital.v", 284, 508); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("Digital.v", 147, 601); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("Digital.v", 207, 596); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("Digital.v", 274, 702); // cl (w, cp)
+selectCodeEditor("Digital.v", 393, 719); // cl (w, cp)
+selectCodeEditor("Digital.v", 306, 749); // cl (w, cp)
+selectCodeEditor("Digital.v", 188, 509); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1965526 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 71 MB. Current time: 7/27/24, 2:20:37 PM CST
+// Elapsed time: 2424 seconds
+selectCodeEditor("Digital.v", 247, 643); // cl (w, cp)
+// Elapsed time: 36 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 25 seconds
+selectCodeEditor("Digital.v", 386, 391); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Digital.v", 345, 394); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("Digital.v", 346, 377); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 613, 455); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 623, 442); // cl (w, cp)
+selectCodeEditor("Digital.v", 735, 453); // cl (w, cp)
+selectCodeEditor("Digital.v", 865, 452); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 407, 489); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 623, 507); // cl (w, cp)
+selectCodeEditor("Digital.v", 754, 500); // cl (w, cp)
+selectCodeEditor("Digital.v", 909, 503); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 406, 553); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 628, 541); // cl (w, cp)
+selectCodeEditor("Digital.v", 756, 547); // cl (w, cp)
+selectCodeEditor("Digital.v", 895, 550); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 443, 587); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 599, 395); // cl (w, cp)
+selectCodeEditor("Digital.v", 608, 406); // cl (w, cp)
+selectCodeEditor("Digital.v", 590, 437); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("Digital.v", 342, 609); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 735, 663); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 612, 652); // cl (w, cp)
+selectCodeEditor("Digital.v", 753, 610); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("Digital.v", 860, 612); // cl (w, cp)
+selectCodeEditor("Digital.v", 934, 677); // cl (w, cp)
+selectCodeEditor("Digital.v", 438, 703); // cl (w, cp)
+selectCodeEditor("Digital.v", 346, 651); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 609, 700); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 613, 708); // cl (w, cp)
+selectCodeEditor("Digital.v", 752, 723); // cl (w, cp)
+selectCodeEditor("Digital.v", 345, 712); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectCodeEditor("Digital.v", 744, 758); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'v'); // cl (w, cp)
+selectCodeEditor("Digital.v", 615, 762); // cl (w, cp)
+selectCodeEditor("Digital.v", 808, 760); // cl (w, cp)
+selectCodeEditor("Digital.v", 411, 654); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Led_Devices.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectCodeEditor("Digital.v", 1041, 81); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital (Digital.v)]", 15); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Digital (Digital.v)]", 15); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital.v", 7); // k (j, cp)
+selectCodeEditor("Digital.v", 435, 561); // cl (w, cp)
+typeControlKey((HResource) null, "Digital.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+selectCodeEditor("miniRV_SoC.v", 188, 546); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("miniRV_SoC.v", 189, 547); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 180, 478); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("miniRV_SoC.v", 752, 505); // cl (w, cp)
+// Elapsed time: 140 seconds
+selectCodeEditor("miniRV_SoC.v", 511, 491); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 238, 344); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 162, 173); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 519, 498); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 252, 137); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 522, 544); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 294, 227); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 514, 600); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 295, 293); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 168, 339); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 524, 660); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 293, 277); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 574, 315); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 310, 297); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 312, 453); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 290, 298); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 528, 698); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 542, 708); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 321, 411); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("miniRV_SoC.v", 235, 509); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 542, 498); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 178, 401); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 162, 132); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 234, 506); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 641, 503); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 166, 329); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 228, 711); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 597, 698); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 295, 235); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 252, 595); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 612, 602); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 159, 358); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 210, 654); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 571, 655); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("miniRV_SoC.v", 287, 124); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 264, 550); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 706, 541); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("miniRV_SoC.v", 575, 564); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 286, 257); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 441, 31); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 440, 126); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 430, 133); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 217, 441); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 211, 503); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Digital_trans.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV_SoC.v", 1); // k (j, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("miniRV_SoC.v", 1103, 644); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 1086, 764); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 306, 661); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 898, 560); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 1080, 640); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 969, 765); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 182, 559); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 28 seconds
+selectCodeEditor("miniRV_SoC.v", 726, 458); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 221, 298); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 237, 178); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 532, 554); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 235, 184); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 524, 546); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 163, 230); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 520, 494); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 288, 283); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 515, 604); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 283, 338); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 517, 641); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 523, 406); // cl (w, cp)
+selectCodeEditor("miniRV_SoC.v", 351, 455); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 465 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_DRAM : DRAM (DRAM.xci)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_DRAM : DRAM (DRAM.xci)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cp): Re-customize IP: addNotify
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cT (C, r)
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a (C, r)
+// Elapsed time: 22 seconds
+setFileChooser("F:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {F:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator.coe}] [get_ips IROM] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator.coe' 
+// aI (cp): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 136 MB (+530kb) [04:39:30]
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all IROM] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run IROM_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 16 IROM_synth_1 
+// Tcl Message: [Sat Jul 27 14:44:29 2024] Launched IROM_synth_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/IROM_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 57 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 17); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 18); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_SoC.xdc]", 20, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_SoC.xdc]", 20, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_SoC.xdc]", 20, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_SoC.xdc]", 20, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Jul 27 14:46:03 2024] Launched IROM_synth_1, synth_1... Run output will be captured here: IROM_synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/IROM_synth_1/runme.log synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log [Sat Jul 27 14:46:03 2024] Launched impl_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 188 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, miniRV_clock.xdc]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,003 MB. GUI used memory: 78 MB. Current time: 7/27/24, 2:50:38 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 146 MB (+2447kb) [04:45:56]
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 66 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'led' should not be used in output port connection [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v:58]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\Digital.v;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("Digital.v", 661, 543); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-196] conditional expression could not be resolved to a constant [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v:55]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\Digital.v;-;;-;16;-;line;-;55;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'led' should not be used in output port connection [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v:58]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\Digital.v;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (Q, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v)]", 15); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v), trans[0].myTrans : Digital_trans (Digital_trans.v)]", 16, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v), trans[0].myTrans : Digital_trans (Digital_trans.v)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Switches.v", 6); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v), trans[0].myTrans : Digital_trans (Digital_trans.v)]", 16, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v), trans[0].myTrans : Digital_trans (Digital_trans.v)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Switches.v", 6); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v)]", 15, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'led' should not be used in output port connection [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v:58]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\Digital.v;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("Digital.v", 74, 229); // cl (w, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-196] conditional expression could not be resolved to a constant [F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/Digital.v:55]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\miniRV-HITSZ\miniRV-HITSZ.srcs\sources_1\new\Digital.v;-;;-;16;-;line;-;55;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 153 MB (+498kb) [04:47:33]
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Jul 27 14:52:30 2024] Launched synth_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log [Sat Jul 27 14:52:30 2024] Launched impl_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 713 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.. ]", 2, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Route Design, [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.. ]", 2, false); // ah (Q, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 32 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 94 MB. Current time: 7/27/24, 3:05:03 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,736 MB. GUI used memory: 93 MB. Current time: 7/27/24, 3:05:12 PM CST
+// [Engine Memory]: 1,736 MB (+740236kb) [05:00:18]
+// [Engine Memory]: 1,827 MB (+4089kb) [05:00:19]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,945 MB (+27372kb) [05:00:20]
+// [GUI Memory]: 168 MB (+7324kb) [05:00:20]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1899 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2504 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a100tfgg484-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1940.148 ; gain = 17.797 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1940.148 ; gain = 17.797 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1940.234 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2060 instances were transformed.   RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 2126.547 ; gain = 1004.766 
+// TclEventType: DRC_ADDED
+// [Engine Memory]: 2,045 MB (+2752kb) [05:00:21]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.4s
+// Device view-level: 0.0
+// [Engine Memory]: 2,158 MB (+12207kb) [05:00:22]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 177 MB (+893kb) [05:00:23]
+// [GUI Memory]: 187 MB (+1126kb) [05:00:23]
+// [GUI Memory]: 199 MB (+2581kb) [05:00:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  1680 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 210 MB (+437kb) [05:00:25]
+// 'dQ' command handler elapsed time: 22 seconds
+// Device view-level: 0.0
+// S (cp): Critical Messages: addNotify
+// Device view-level: 0.0
+// Elapsed time: 22 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// [GUI Memory]: 231 MB (+11601kb) [05:00:26]
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.", 0); // b (D, S)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (Q, cp)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, false, true); // a (Q, cp) - Double Click
+// Elapsed time: 54 seconds
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-16.343 ns"); // h (Q, cp)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.9s
+// WARNING: HEventQueue.dispatchEvent() is taking  1087 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,256 MB. GUI used memory: 155 MB. Current time: 7/27/24, 3:06:33 PM CST
+// Elapsed time: 41 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Clkgen : cpuclk (cpuclk.xci)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Clkgen : cpuclk (cpuclk.xci)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cp)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+// Elapsed time: 12 seconds
+setText("CLKOUT1 REQUESTED PHASE", "10"); // z (cU, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_REQUESTED_PHASE {10} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_PHASE {10.000}] [get_ips cpuclk] 
+// aI (cp): Generate Output Products: addNotify
+// Device view-level: 0.0
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cpuclk'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cpuclk'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'cpuclk'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cpuclk'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all cpuclk] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run cpuclk_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 16 cpuclk_synth_1 
+// Tcl Message: [Sat Jul 27 15:08:09 2024] Launched cpuclk_synth_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Device view-level: 0.0
+// [Engine Memory]: 2,267 MB (+760kb) [05:03:19]
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "16", 15); // e (bc, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 2,267 MB. GUI used memory: 166 MB. Current time: 7/27/24, 3:08:25 PM CST
+// TclEventType: RUN_MODIFY
+// Device view-level: 0.0
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Jul 27 15:08:25 2024] Launched cpuclk_synth_1, synth_1... Run output will be captured here: cpuclk_synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/runme.log synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log [Sat Jul 27 15:08:25 2024] Launched impl_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cQ, cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,328 MB. GUI used memory: 136 MB. Current time: 7/27/24, 3:08:31 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,328 MB. GUI used memory: 136 MB. Current time: 7/27/24, 3:08:31 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2293 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bx (cp):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 740 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,328 MB. GUI used memory: 113 MB. Current time: 7/27/24, 3:20:57 PM CST
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2504 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2447.590 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2447.590 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2447.590 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2060 instances were transformed.   RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2447.590 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.7s
+// WARNING: HEventQueue.dispatchEvent() is taking  1155 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 8 seconds
+// Device view-level: 0.0
+// S (cp): Critical Messages: addNotify
+// Device view-level: 0.0
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.", 0); // b (D, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.", 0, false, false, false, true, false); // b (D, S) - Popup Trigger
+selectMenuItem(PAResourceAtoD.CmdMsgDialog_COPY_MESSAGE, "Copy Message"); // af (al, S)
+// Elapsed time: 65 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (S)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "IP Status", 5); // aI (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,345 MB. GUI used memory: 238 MB. Current time: 7/27/24, 3:22:21 PM CST
+// Device view-level: 0.0
+selectTab((HResource) null, (HResource) null, "Power", 6); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "DRC", 7); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Methodology", 8); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Timing", 9); // aI (aF, cp)
+// Elapsed time: 60 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Clkgen : cpuclk (cpuclk.xci)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Clkgen : cpuclk (cpuclk.xci)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cp)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 3); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,348 MB. GUI used memory: 178 MB. Current time: 7/27/24, 3:23:48 PM CST
+// Elapsed time: 14 seconds
+setText("CLKOUT1 REQUESTED PHASE", (String) null); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT1 REQUESTED PHASE", "25", true); // z (cU, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 18 seconds
+setText("CLKOUT2 REQUESTED OUT FREQ", "100.000", true); // z (cU, r)
+setText("CLKOUT1 REQUESTED OUT FREQ", "25", true); // z (cU, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 32 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT1_REQUESTED_PHASE {25} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {36} CONFIG.MMCM_CLKOUT0_PHASE {25.000} CONFIG.CLKOUT1_JITTER {183.467}] [get_ips cpuclk] 
+// aI (cp): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cpuclk'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cpuclk'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'cpuclk'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cpuclk'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all cpuclk] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run cpuclk_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 16 cpuclk_synth_1 
+// Tcl Message: [Sat Jul 27 15:25:50 2024] Launched cpuclk_synth_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,374 MB. GUI used memory: 178 MB. Current time: 7/27/24, 3:25:53 PM CST
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 2,374 MB. GUI used memory: 178 MB. Current time: 7/27/24, 3:26:00 PM CST
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Jul 27 15:25:59 2024] Launched cpuclk_synth_1, synth_1... Run output will be captured here: cpuclk_synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/cpuclk_synth_1/runme.log synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log [Sat Jul 27 15:26:00 2024] Launched impl_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cQ, cp)
+// TclEventType: DESIGN_CLOSE
+// [Engine Memory]: 2,419 MB (+40167kb) [05:21:09]
+// [GUI Memory]: 244 MB (+951kb) [05:21:10]
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 130 MB. Current time: 7/27/24, 3:26:04 PM CST
+// Engine heap size: 2,440 MB. GUI used memory: 131 MB. Current time: 7/27/24, 3:26:04 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2103 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bx (cp):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 287 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 128 MB. Current time: 7/27/24, 3:30:57 PM CST
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2504 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2678.566 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2678.566 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2678.566 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2060 instances were transformed.   RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2678.566 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.7s
+// WARNING: HEventQueue.dispatchEvent() is taking  1145 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 8 seconds
+// Device view-level: 0.0
+// Device view-level: 0.0
+dismissDialog("Open Implemented Design"); // bx (cp)
+// [GUI Memory]: 259 MB (+2721kb) [05:26:16]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1119 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2444 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,309 MB. GUI used memory: 198 MB. Current time: 7/27/24, 3:31:25 PM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 3,309 MB (+806780kb) [05:26:31]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false); // t (Q, cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true); // t (Q, cp) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true, false, false, false, true, false); // t (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+// Elapsed time: 116 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  2525 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,459 MB. GUI used memory: 188 MB. Current time: 7/27/24, 3:33:43 PM CST
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), myDigital : Digital (Digital.v), trans[2].myTrans : Digital_trans (Digital_trans.v)]", 18, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Digital.v", 207, 63); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Jul 27 15:34:08 2024] Launched synth_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log [Sat Jul 27 15:34:08 2024] Launched impl_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 262 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1022 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true); // t (Q, cp) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true, false, false, false, true, false); // t (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 902 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  2188 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniRV_SoC (miniRV_SoC.v), Mem_IROM : IROM (IROM.xci)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cp): Re-customize IP: addNotify
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cT (C, r)
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a (C, r)
+// Elapsed time: 17 seconds
+setFileChooser("F:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator_FPGA.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {F:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator_FPGA.coe}] [get_ips IROM] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'f:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator_FPGA.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator_FPGA.coe' 
+// aI (cp): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all IROM] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run IROM_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 16 IROM_synth_1 
+// Tcl Message: [Sat Jul 27 15:54:24 2024] Launched IROM_synth_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/IROM_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Jul 27 15:54:39 2024] Launched IROM_synth_1, synth_1... Run output will be captured here: IROM_synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/IROM_synth_1/runme.log synth_1: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log [Sat Jul 27 15:54:39 2024] Launched impl_1... Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,462 MB. GUI used memory: 195 MB. Current time: 7/27/24, 4:03:44 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 1009 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// aI (cp): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_YES, "Yes"); // a (aI)
+dismissDialog("Feedback Request"); // aI (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true); // t (Q, cp) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true, false, false, false, true, false); // t (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)

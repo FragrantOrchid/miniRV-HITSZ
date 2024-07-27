@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Thu Jul 25 23:18:47 2024
+// Date        : Sat Jul 27 15:26:13 2024
 // Host        : ClientOrchid running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk/cpuclk_stub.v

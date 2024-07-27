@@ -19,7 +19,7 @@ vlog -work dist_mem_gen_v8_0_12 -64 \
 "../../../ipstatic/simulation/dist_mem_gen_v8_0.v" \
 
 vlog -work xil_defaultlib -64 \
-"../../../../../../../../Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/sim/IROM.v" \
+"../../../../../comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/sim/IROM.v" \
 
 
 vlog -work xil_defaultlib \

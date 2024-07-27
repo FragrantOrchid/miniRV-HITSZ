@@ -27,9 +27,10 @@ module ALU(
     output reg [31:0] C,
     output reg f
     );
-    wire SignedA,SignedB;
-    assign SignedA = {~A[31],A[30:0]};
-    assign SignedB = {~B[31],B[30:0]};
+    wire [31:0] SignedA;
+    wire [31:0] SignedB;
+    assign  SignedA = {~A[31],A[30:0]};
+    assign  SignedB = {~B[31],B[30:0]};
     always @(*)begin
         case(op)
             4'b0000: begin
@@ -53,15 +54,15 @@ module ALU(
                 f = ($signed(A) < $signed(B))?1'b1:1'b0;
             end
             4'b0001:begin
-                C = A << B;
+                C = A << B[4:0];
                 f = A != B;
             end
             4'b0101:begin
-                C = A >> B;
+                C = A >> B[4:0];
                 f = SignedA >= SignedB;
             end
             4'b1101:begin
-                C = A >>> B;
+                C = ($signed(A)) >>> B[4:0];
                 f = 1'b0;
             end
             4'b0010:begin

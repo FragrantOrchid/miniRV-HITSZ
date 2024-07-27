@@ -17,6 +17,7 @@
     `define NPC_OP_NEXT 2'b00   //Ë³ÐòÖ´ÐÐ
     `define NPC_OP_OFFSET 2'b01 //Ìø×ª
     `define NPC_OP_JALR 2'b10   //jalr
+    `define NPC_OP_JAL 2'b11    //jal
 
     `define ALUB_RD2 1'b0
     `define ALUB_EXT 1'b1

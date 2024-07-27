@@ -56,7 +56,8 @@ module myCPU (
         .br(ALU_f),
         .op(CTRL_npc_op),
         .npc(NPC_npc),
-        .pc4(NPC_pc4)
+        .pc4(NPC_pc4),
+        .pc_offset(ALU_C)
     );
     PC myPC(
         .clk(cpu_clk),
@@ -70,13 +71,20 @@ module myCPU (
         .din(inst[31:7]),
         .ext(SEXT_ext)  
     );
+    wire [31:0] DRAM_EXT_rdo;
     WSEL myWSEL(
         .op(CTRL_rf_wsel),
         .pc4(NPC_pc4),
         .sext(SEXT_ext),
         .alu(ALU_C),
-        .dram(Bus_rdata),
+        .dram(DRAM_EXT_rdo),
         .data(WSEL_data)
+    );
+    DRAM_EXT myDRAM_EXT(
+        .rdi(Bus_rdata),
+        .rdo(DRAM_EXT_rdo),
+        .tail(ALU_C[1:0]),
+        .op(inst[14:12])
     );
     Controller myController(
         .opcode(inst[6:0]),
@@ -100,23 +108,38 @@ module myCPU (
         .rD1(RF_rD1),
         .rD2(RF_rD2)
     );
+    
     ALU_B myALU_B(
         .A(RF_rD2),
         .B(SEXT_ext),
         .op(CTRL_alub_sel),
         .C(ALU_B_C)
     );
-    
+    wire [31:0] ALU_A_data;
+    ALU_A myALU_A(
+        .pc(PC_pc),
+        .rD1(RF_rD1),
+        .op(inst[6:0] != 7'b0010111),
+        .data(ALU_A_data)
+    );
     ALU myALU(
         .op(CTRL_alu_op),
-        .A(RF_rD1),
+        .A(ALU_A_data),
         .B(ALU_B_C),
         .C(ALU_C),
         .f(ALU_f)
     );
+    wire [31:0] DRAM_IN_data;
+    DRAM_IN myDRAM_IN(
+        .in(RF_rD2),
+        .old(Bus_rdata),
+        .tail(ALU_C[1:0]),
+        .op(inst[14:12]),
+        .data(DRAM_IN_data)
+    );
     assign Bus_addr = ALU_C;
     assign Bus_we = CTRL_ram_we;
-    assign Bus_wdata = RF_rD2;
+    assign Bus_wdata = DRAM_IN_data;
     
     
 

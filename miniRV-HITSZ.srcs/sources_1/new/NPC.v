@@ -39,6 +39,7 @@ module NPC(
             `NPC_OP_NEXT:npc = PC+4;
             `NPC_OP_OFFSET:npc = br?PC+offset:PC+4;
             `NPC_OP_JALR:npc = pc_offset;
+            `NPC_OP_JAL:npc = PC+offset;
             default:npc = `ZERO_32;
         endcase
     end

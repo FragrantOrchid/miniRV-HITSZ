@@ -36,9 +36,9 @@ module SEXT(
         case(op)
             `SEXT_OP_I:ext = {{20{din[31]}},din[31:20]};
             `SEXT_OP_S:ext = {{20{din[31]}},din[31:25],din[11:7]};
-            `SEXT_OP_B:ext = {{20{din[31]}},din[31],din[7],din[30:25],din[11:8]};
+            `SEXT_OP_B:ext = {{19{din[31]}},din[31],din[7],din[30:25],din[11:8],1'b0};
             `SEXT_OP_U:ext = {din[31:12],12'h000};
-            `SEXT_OP_J:ext = {{20{din[31]}},din[31],din[19:12],din[20],din[30:21]};
+            `SEXT_OP_J:ext = {{11{din[31]}},din[31],din[19:12],din[20],din[30:21],1'b0};
             default:ext = `ZERO_32;
         endcase
         
