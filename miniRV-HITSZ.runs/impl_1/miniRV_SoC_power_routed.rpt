@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Jul 27 16:10:18 2024
+| Date             : Sun Jul 28 20:16:05 2024
 | Host             : ClientOrchid running 64-bit major release  (build 9200)
 | Command          : report_power -file miniRV_SoC_power_routed.rpt -pb miniRV_SoC_power_summary_routed.pb -rpx miniRV_SoC_power_routed.rpx
 | Design           : miniRV_SoC
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.281        |
+| Total On-Chip Power (W)  | 0.347        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.183        |
+| Dynamic (W)              | 0.250        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 84.2         |
-| Junction Temperature (C) | 25.8         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.004 |        5 |       --- |             --- |
-| Slice Logic              |     0.023 |    16973 |       --- |             --- |
-|   LUT as Distributed RAM |     0.014 |     8240 |     19000 |           43.37 |
-|   LUT as Logic           |     0.006 |     1784 |     63400 |            2.81 |
-|   F7/F8 Muxes            |     0.003 |     6528 |     63400 |           10.30 |
+| Clocks                   |     0.006 |        5 |       --- |             --- |
+| Slice Logic              |     0.036 |    16973 |       --- |             --- |
+|   LUT as Distributed RAM |     0.023 |     8240 |     19000 |           43.37 |
+|   LUT as Logic           |     0.009 |     1787 |     63400 |            2.82 |
+|   F7/F8 Muxes            |     0.004 |     6528 |     63400 |           10.30 |
 |   CARRY4                 |    <0.001 |       58 |     15850 |            0.37 |
 |   Register               |    <0.001 |      136 |    126800 |            0.11 |
 |   Others                 |     0.000 |       13 |       --- |             --- |
-| Signals                  |     0.053 |     3747 |       --- |             --- |
-| PLL                      |     0.103 |        1 |         6 |           16.67 |
+| Signals                  |     0.094 |     3747 |       --- |             --- |
+| PLL                      |     0.113 |        1 |         6 |           16.67 |
 | I/O                      |    <0.001 |       71 |       285 |           24.91 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.281 |          |           |                 |
+| Total                    |     0.347 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.105 |       0.090 |      0.015 |
-| Vccaux    |       1.800 |     0.070 |       0.052 |      0.018 |
+| Vccint    |       1.000 |     0.163 |       0.148 |      0.015 |
+| Vccaux    |       1.800 |     0.075 |       0.056 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -130,8 +130,8 @@ Table of Contents
 +-----------------+-----------------------------+-----------------+
 | Clock           | Domain                      | Constraint (ns) |
 +-----------------+-----------------------------+-----------------+
-| clk_out1_cpuclk | Clkgen/inst/clk_out1_cpuclk |            40.0 |
-| clkfbout_cpuclk | Clkgen/inst/clkfbout_cpuclk |            10.0 |
+| clk_out1_cpuclk | Clkgen/inst/clk_out1_cpuclk |            25.0 |
+| clkfbout_cpuclk | Clkgen/inst/clkfbout_cpuclk |            50.0 |
 | fpga_clk        | fpga_clk                    |            10.0 |
 +-----------------+-----------------------------+-----------------+
 
@@ -145,14 +145,14 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| miniRV_SoC                        |     0.183 |
-|   Clkgen                          |     0.103 |
-|     inst                          |     0.103 |
-|   Core_cpu                        |     0.048 |
-|     myRF                          |     0.047 |
-|   Mem_DRAM                        |     0.031 |
-|     U0                            |     0.031 |
-|       synth_options.dist_mem_inst |     0.031 |
+| miniRV_SoC                        |     0.250 |
+|   Clkgen                          |     0.113 |
+|     inst                          |     0.113 |
+|   Core_cpu                        |     0.082 |
+|     myRF                          |     0.081 |
+|   Mem_DRAM                        |     0.053 |
+|     U0                            |     0.053 |
+|       synth_options.dist_mem_inst |     0.053 |
 +-----------------------------------+-----------+
 
 
