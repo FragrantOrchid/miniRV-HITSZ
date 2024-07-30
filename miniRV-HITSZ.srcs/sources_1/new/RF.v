@@ -32,8 +32,14 @@ module RF(
     );
     reg [31:0] regs [31:0];
     always @(*)begin
-        rD1 = regs[rR1];
-        rD2 = regs[rR2];
+        if(rR1 == 5'b00000)begin
+            rD1 = 32'h0000_0000;
+        end else if(rR2 == 5'b00000)begin
+            rD2 = 32'h0000_0000;
+        end else begin
+            rD1 = regs[rR1];
+            rD2 = regs[rR2];
+        end
     end
     always @(posedge clk)begin
         if(we && wR != 5'b00000)begin

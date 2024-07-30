@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/param.v" --include "../../../../miniRV-HITSZ.srcs/sources_1/new" --include "../../../../../comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/cpuclk" \
+"../../../../../comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/DRAM/sim/DRAM.v" \
+"../../../../../comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/sim/IROM.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/ALU.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/ALU_A.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/ALU_B.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Bridge.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Buttons.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Controller.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/DRAM_EXT.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/DRAM_IN.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Digital.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Digital_trans.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Led_Devices.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/NPC.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/PC.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/RF.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/SEXT.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Switches.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/WSEL.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/miniRV_SoC.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/myCPU.v" \
+"../../../../miniRV-HITSZ.srcs/sim_1/new/miniRV_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

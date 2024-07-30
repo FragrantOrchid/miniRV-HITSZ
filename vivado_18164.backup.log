@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 29 20:53:01 2024
+# Process ID: 18164
+# Current directory: F:/miniRV-HITSZ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3472 F:\miniRV-HITSZ\miniRV-HITSZ.xpr
+# Log file: F:/miniRV-HITSZ/vivado.log
+# Journal file: F:/miniRV-HITSZ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/miniRV-HITSZ/miniRV-HITSZ.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 832.395 ; gain = 182.988
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Jul 29 20:54:14 2024] Launched synth_1...
+Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Mon Jul 29 20:55:11 2024] Launched impl_1...
+Run output will be captured here: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2503 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.625 ; gain = 14.309
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.625 ; gain = 14.309
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1879.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2060 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2065.375 ; gain = 883.730
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 29 21:37:15 2024...

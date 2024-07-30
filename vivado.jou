@@ -2,19 +2,193 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Jul 29 20:53:01 2024
-# Process ID: 18164
+# Start of session at: Tue Jul 30 13:56:21 2024
+# Process ID: 3560
 # Current directory: F:/miniRV-HITSZ
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3472 F:\miniRV-HITSZ\miniRV-HITSZ.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13304 F:\miniRV-HITSZ\miniRV-HITSZ.xpr
 # Log file: F:/miniRV-HITSZ/vivado.log
 # Journal file: F:/miniRV-HITSZ\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project F:/miniRV-HITSZ/miniRV-HITSZ.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
-launch_runs impl_1 -jobs 16
-wait_on_run impl_1
-open_run impl_1
+set_property -dict [list CONFIG.coefficient_file {C:/Users/FragrantOrchid/Desktop/testforsingle.coe}] [get_ips IROM]
+generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs -jobs 16 IROM_synth_1
+export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v
+file delete -force F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source miniRV_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC/rst}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC/pc}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Mem_IROM/spo}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myDRAM_IN/in}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myDRAM_IN/old}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myDRAM_IN/data}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myDRAM_EXT/rdi}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myDRAM_EXT/rdo}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/br}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/PC}} 
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/offset}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/npc}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU_A}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF}} 
+set_property -dict [list CONFIG.coefficient_file {C:/Users/FragrantOrchid/Desktop/testforsingle.coe}] [get_ips IROM]
+generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs -jobs 16 IROM_synth_1
+export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+source miniRV_sim.tcl
+current_wave_config {Untitled 2}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC/pc}} 
+relaunch_sim
+set_property -dict [list CONFIG.coefficient_file {F:/comp2012/Lab2-单周期CPU及SoC设计/test2.coe}] [get_ips IROM]
+generate_target all [get_files  F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci]
+catch { config_ip_cache -export [get_ips -all IROM] }
+export_ip_user_files -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -no_script -sync -force -quiet
+reset_run IROM_synth_1
+launch_runs -jobs 16 IROM_synth_1
+export_simulation -of_objects [get_files F:/comp2012/Lab2-CPUSoC/proj_miniRV/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources/IROM/IROM.xci] -directory F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/sim_scripts -ip_user_files_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files -ipstatic_source_dir F:/miniRV-HITSZ/miniRV-HITSZ.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/modelsim} {questa=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/questa} {riviera=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/riviera} {activehdl=F:/miniRV-HITSZ/miniRV-HITSZ.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+source miniRV_sim.tcl
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC/pc}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF/rD1}} 
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF/rD2}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF/we}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF/regs}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF/rR1}} 
+current_wave_config {Untitled 3}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF/wD}} 
+relaunch_sim
+close_sim
+launch_simulation
+source miniRV_sim.tcl
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC/pc}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/npc}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/miniRV_sim/DUT/Clkgen}} 
+relaunch_sim
+export_ip_user_files -of_objects  [get_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v
+file delete -force F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sim_1/new/testbench.v
+close_sim
+launch_simulation
+source miniRV_sim.tcl
+current_wave_config {Untitled 5}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC}} 
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myRF}} 
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myWSEL}} 
+relaunch_sim
+close_sim
+launch_simulation
+source miniRV_sim.tcl
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myPC}} 
+relaunch_sim
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Mem_IROM/spo}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/A}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/B}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/C}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/f}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/op}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/C}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myALU/f}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Bridge/rdata_from_dram}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Bridge/we_to_dram}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Bridge/addr_to_dram}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Bridge/rdata_from_dram}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Bridge/wdata_to_dram}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Bridge/we_to_dram}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/PC}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/br}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/op}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/npc}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/offset}} 
+current_wave_config {Untitled 6}
+add_wave {{/miniRV_sim/DUT/Core_cpu/myNPC/npc}} 
+relaunch_sim
+close_sim
