@@ -32,7 +32,7 @@ module miniRV_sim();
     miniRV_SoC DUT (
         .fpga_rst   (fpga_rst),
         .fpga_clk   (fpga_clk),
-        .switch     (switch),
+        .sw    (switch),
         .button     (button),
         .dig_en     (dig_en),
         .DN_A       (DN_A),

@@ -64,7 +64,6 @@ module myCPU (
     wire        ID_EXE_DRAMWen;
     wire        ID_EXE_PCSel;
     wire  [2:0] ID_EXE_BCOMPEn;
-    //output reg   [3:0]  ID_EXE_IMMSel,
     wire  [3:0] ID_EXE_ALUSel;
     wire        ID_EXE_ASel;
     wire        ID_EXE_BSel;
@@ -351,7 +350,6 @@ module myCPU (
     MEM_WB  U_MEM_WB(
             .cpu_rst(cpu_rst),
             .cpu_clk(cpu_clk),
-            //.stop_MEM_WB(stop_MEM_WB),
             .EXE_MEM_RFWen(EXE_MEM_RFWen),
             .EXE_MEM_PCSel(EXE_MEM_PCSel),
             .EXE_MEM_WBSel(EXE_MEM_WBSel),
@@ -365,31 +363,17 @@ module myCPU (
             .EXE_MEM_wR(EXE_MEM_wR),
             
             .MEM_WB_RFWen(MEM_WB_RFWen),
-            .MEM_WB_PCSel(MEM_WB_PCSel),
             .MEM_WB_WBSel(MEM_WB_WBSel),
             .MEM_WB_imm(MEM_WB_imm),
             .MEM_WB_pc(MEM_WB_pc),
             .MEM_WB_naddr(MEM_WB_naddr),
-            .MEM_WB_beq(MEM_WB_beq),
-            .MEM_WB_blt(MEM_WB_blt),
             .MEM_WB_aluC(MEM_WB_aluC),
             .MEM_WB_rdout(MEM_WB_rdout),
             .MEM_WB_wR(MEM_WB_wR)
             );
-    always @(posedge cpu_clk or posedge cpu_rst)
-    begin
-        if(cpu_rst)
-        begin
-            last_WBperformed_pc <= 32'hFFFF_FFFC;
-        end
-        else if(MEM_WB_RFWen)
-        begin
-            last_WBperformed_pc <= MEM_WB_pc;
-        end
-        else
-        begin
-            last_WBperformed_pc <= last_WBperformed_pc;
-        end
+    always @(posedge cpu_clk or posedge cpu_rst)begin
+        if(cpu_rst)last_WBperformed_pc <= 32'hFFFF_FFFC;
+        else last_WBperformed_pc <= MEM_WB_RFWen?MEM_WB_pc:last_WBperformed_pc;
     end    
     
     //WB
@@ -408,49 +392,19 @@ module myCPU (
     wire        debug_flow;
     assign     debug_flow = (debug_cnt_flow == 3'd4);
     
-    always @(posedge cpu_clk or posedge cpu_rst)
-    begin
-        if(cpu_rst)
-        begin
-            debug_cnt_flow <= 3'b0;
-        end
-        else
-        begin
-            debug_cnt_flow <= debug_cnt_flow + 1'b1;
-        end
+    always @(posedge cpu_clk or posedge cpu_rst)begin
+        if(cpu_rst) debug_cnt_flow <= 3'b0;
+        else debug_cnt_flow <= debug_cnt_flow + 1'b1;
     end
     
-    always @(posedge cpu_clk or posedge cpu_rst)
-    begin
-        if(cpu_rst)
-        begin
-            debug_start_flow <= 1'b0;
-            
-        end
-        else 
-        begin
-            if( (!debug_start_flow) && debug_flow)
-            begin
-                debug_start_flow <= 1'b1;
-            end
-            else
-            begin
-                debug_start_flow <= debug_start_flow;
-            end
-        end
+    always @(posedge cpu_clk or posedge cpu_rst)begin
+        if(cpu_rst) debug_start_flow <= 1'b0;
+        else debug_start_flow <= ( (!debug_start_flow) && debug_flow)?1'b1:debug_start_flow;
     end   
     
     
-    always @(posedge cpu_clk or posedge cpu_rst)
-    begin
-        if(cpu_rst || (!debug_start_flow) )
-        begin
-            debug_last_Finish_pc <= 32'hFFFF_FFFC; 
-        end
-        else
-        begin
-            debug_last_Finish_pc <= MEM_WB_pc;
-        end
+    always @(posedge cpu_clk or posedge cpu_rst)begin
+        debug_last_Finish_pc <= (cpu_rst || (!debug_start_flow) )?32'hFFFF_FFFC:MEM_WB_pc;
     end
 `endif
     

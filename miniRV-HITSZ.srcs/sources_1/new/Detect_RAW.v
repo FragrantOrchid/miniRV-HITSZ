@@ -43,36 +43,12 @@ module Detect_RAW(
     always@(*)
     begin
         case(opcode)
-            7'b0110111:
-                begin
-                    id_rR1 = 0;
-                    id_rR2 = 0;
-                end
-            7'b1101111:
-                begin
-                    id_rR1 = 0;
-                    id_rR2 = 0;
-                end
-            7'b0010011:
-                begin
-                    id_rR1 = 1;
-                    id_rR2 = 0;
-                end    
-            7'b0000011:
-                begin
-                    id_rR1 = 1;
-                    id_rR2 = 0;
-                end    
-            7'b1100111:
-                begin
-                    id_rR1 = 1;
-                    id_rR2 = 0;
-                end       
-            default:
-                begin
-                    id_rR1 = 1;
-                    id_rR2 = 1;
-                end    
+            7'b0110111:{id_rR1,id_rR2}=2'b00;
+            7'b1101111:{id_rR1,id_rR2}=2'b00;
+            7'b0010011:{id_rR1,id_rR2}=2'b10;
+            7'b0000011:{id_rR1,id_rR2}=2'b10;
+            7'b1100111:{id_rR1,id_rR2}=2'b10;
+            default:{id_rR1,id_rR2}=2'b11;
         endcase    
     end
     

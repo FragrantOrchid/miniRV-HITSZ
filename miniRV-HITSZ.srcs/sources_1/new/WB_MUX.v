@@ -28,14 +28,13 @@ module WB_MUX(
     input  wire [1:0]  WBSel,
     output reg  [31:0] wbD
     );
-    always @(*)
-    begin
+    always @(*)begin
         case(WBSel)
             `WB_ALUC:wbD = aluC;
             `WB_DRAM:wbD = rdout;
             `WB_NADDR:wbD = naddr;
             `WB_UIMM:wbD = uimm;
-            default:wbD = 32'b0;
+            default:wbD = `ZERO32;
         endcase            
     end
 endmodule

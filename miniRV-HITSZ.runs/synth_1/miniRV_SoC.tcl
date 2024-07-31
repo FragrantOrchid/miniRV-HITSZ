@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param general.maxThreads 32
 create_project -in_memory -part xc7a100tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,7 +31,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo f:/miniRV-HITSZ/miniRV-HITSZ.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files F:/comp2012/Lab1-ª„±‡”Ô—‘≥Ã–Ú…Ëº∆/Lab1-miniRV-asm/calculator_FPGA.coe
-add_files f:/comp2012/calculator_FPGA.coe
+add_files F:/comp2012/calculator_FPGA.coe
 read_verilog F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/defines.vh
 set_property is_global_include true [get_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/defines.vh]
 read_verilog -library xil_defaultlib {
@@ -87,6 +86,8 @@ set_property used_in_implementation false [get_files F:/miniRV-HITSZ/miniRV-HITS
 read_xdc F:/miniRV-HITSZ/miniRV-HITSZ.srcs/constrs_1/new/miniRV_SoC.xdc
 set_property used_in_implementation false [get_files F:/miniRV-HITSZ/miniRV-HITSZ.srcs/constrs_1/new/miniRV_SoC.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

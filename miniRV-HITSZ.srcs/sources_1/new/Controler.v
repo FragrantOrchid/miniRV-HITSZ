@@ -67,30 +67,13 @@ module Controler(
                 WBSel = `WB_ALUC;
                 
                 case(funct3)
-                3'b000:
-                    begin
-                        if(funct7 == 7'b0000000)
-                            ALUSel = `OP_ADD;
-                        else
-                            ALUSel = `OP_SUB;
-                    end
-                3'b111:
-                    ALUSel = `OP_AND;
-                3'b110:
-                    ALUSel = `OP_OR;
-                3'b100:
-                    ALUSel = `OP_XOR;
-                3'b001:
-                    ALUSel = `OP_SHIFT_LL;
-                3'b101:
-                    begin
-                        if(funct7 == 7'b0000000)
-                            ALUSel = `OP_SHIFT_RL;
-                        else
-                            ALUSel = `OP_SHIFT_RA;
-                    end
-                default:
-                    ALUSel = 4'b0000;
+                3'b000:ALUSel = (funct7 == 7'b0000000)?`OP_ADD:`OP_SUB;
+                3'b111:ALUSel = `OP_AND;
+                3'b110:ALUSel = `OP_OR;
+                3'b100:ALUSel = `OP_XOR;
+                3'b001:ALUSel = `OP_SHIFT_LL;
+                3'b101:ALUSel = (funct7 == 7'b0000000)?`OP_SHIFT_RL:`OP_SHIFT_RA;
+                default:ALUSel = 4'b0000;
                 endcase
                 
             end

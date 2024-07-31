@@ -37,95 +37,32 @@ module NPC_MUX(
     
     always@(*)
     begin
-        case(opcode)
-            7'b1101111:
-                begin
-                    PCSel = 1;
-                    BCOMPEn = 3'b000;
-                end
-            7'b1100111:
-                begin
-                    PCSel = 1;
-                    BCOMPEn = 3'b000;
-                end
-            7'b1100011:
-                begin
-                    PCSel = 1;
-                    case(funct3)
-                        3'b000:
-                            BCOMPEn = `BCOMP_EQ;
-                        3'b001:
-                            BCOMPEn = `BCOMP_NE;
-                        3'b100:
-                            BCOMPEn = `BCOMP_LT;
-                        3'b101:
-                            BCOMPEn = `BCOMP_GE;
-                        default:
-                            BCOMPEn = 3'b000;
-                    endcase
-                end    
-            default:
-                begin
-                    PCSel = 0;
-                    BCOMPEn = 3'b000;
-                end    
+        casez({opcode,funct3})
+            {7'b1101111,3'bzzz}:{PCSel,BCOMPEn} = {1'b1,3'b000};
+            {7'b1100111,3'bzzz}:{PCSel,BCOMPEn} = {1'b1,3'b000};
+            {7'b1100011,3'b000}:{PCSel,BCOMPEn} = {1'b1,`BCOMP_EQ};
+            {7'b1100011,3'b001}:{PCSel,BCOMPEn} = {1'b1,`BCOMP_NE};
+            {7'b1100011,3'b100}:{PCSel,BCOMPEn} = {1'b1,`BCOMP_LT};
+            {7'b1100011,3'b101}:{PCSel,BCOMPEn} = {1'b1,`BCOMP_GE};
+            {7'b1100011,3'bzzz}:{PCSel,BCOMPEn} = {1'b1,3'b000};
+            default:{PCSel,BCOMPEn} = {1'b0,3'b000};
         endcase
     end
-    
-    always@(*)
-    begin
-        if(PCSel == 0)
-        begin
-            npc = naddr;
-            stop_PC = 1'b0;
-        end
-        
-        else if(pc == EXE_MEM_pc)
-        begin
-            if(BCOMPEn == 3'b000)
-            begin
-                npc = baddr;
-            end
-            else if(BCOMPEn == `BCOMP_EQ)  
-            begin
-                if(beq)
-                    npc = baddr;
-                else
-                    npc = naddr;            
-            end
-            else if(BCOMPEn == `BCOMP_NE)                    
-            begin
-                if(beq)
-                    npc = naddr;
-                else
-                    npc = baddr;
-            end
-            else if(BCOMPEn == `BCOMP_LT)  
-            begin
-                if(blt)
-                    npc = baddr;
-                else
-                    npc = naddr;            
-            end
-            else if(BCOMPEn == `BCOMP_GE)                    
-            begin
-                if(blt)
-                    npc = naddr;
-                else
-                    npc = baddr;
-            end
-            else
-            begin
-                npc = naddr;
-            end 
-            stop_PC = 1'b0;
-        end
-        
-        else
-        begin
-            npc = npc;
-            stop_PC = 1'b1; 
-        end
+    //1,32,3
+    always@(*) begin
+        casez({PCSel,(pc==EXE_MEM_pc),BCOMPEn,beq,blt})
+            {1'b0,1'bz,3'bzzz,1'bz,1'bz}:{npc,stop_PC}={naddr,1'b0};
+            {1'b1,1'b1,3'b000,1'bz,1'bz}:{npc,stop_PC}={baddr,1'b0};
+            {1'b1,1'b1,`BCOMP_EQ,1'b1,1'bz}:{npc,stop_PC}={baddr,1'b0};
+            {1'b1,1'b1,`BCOMP_EQ,1'b0,1'bz}:{npc,stop_PC}={naddr,1'b0};
+            {1'b1,1'b1,`BCOMP_NE,1'b1,1'bz}:{npc,stop_PC}={naddr,1'b0};
+            {1'b1,1'b1,`BCOMP_NE,1'b0,1'bz}:{npc,stop_PC}={baddr,1'b0};
+            {1'b1,1'b1,`BCOMP_LT,1'bz,1'b1}:{npc,stop_PC}={baddr,1'b0};
+            {1'b1,1'b1,`BCOMP_LT,1'bz,1'b0}:{npc,stop_PC}={naddr,1'b0};
+            {1'b1,1'b1,`BCOMP_GE,1'bz,1'b1}:{npc,stop_PC}={naddr,1'b0};
+            {1'b1,1'b1,`BCOMP_GE,1'bz,1'b0}:{npc,stop_PC}={baddr,1'b0};
+            {1'b1,1'b1,3'bzzz,1'bz,1'b0}:{npc,stop_PC}={naddr,1'b0};
+            default:{npc,stop_PC}={npc,1'b1};
+        endcase
     end
-    
 endmodule

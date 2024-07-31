@@ -37,6 +37,8 @@
 `define WB_NADDR   2'b10
 `define WB_UIMM    2'b11
 
+`define ZERO32 32'h0000_0000
+
 // 外设I/O接口电路的端口地址
 `define PERI_ADDR_DIG   32'hFFFF_F000
 `define PERI_ADDR_LED   32'hFFFF_F060

@@ -27,30 +27,17 @@ module ALU(
     input  wire [3:0]  ALUSel,
     output reg  [31:0] C
     );
-    
-    
-    
-    always @(*)
-    begin
+    always @(*) begin
         case(ALUSel)
-        `OP_ADD:
-            C = opA + opB;
-        `OP_SUB:
-            C = opA - opB;
-        `OP_AND:
-            C = opA & opB;
-        `OP_OR:
-            C = opA | opB;
-        `OP_XOR:
-            C = opA ^ opB;
-        `OP_SHIFT_LL:
-            C = opA << opB[4:0];
-        `OP_SHIFT_RL:
-            C = opA >> opB[4:0];
-        `OP_SHIFT_RA:
-            C = $signed(opA) >>> opB[4:0];
-        default:
-            C = 32'b0;        
+            `OP_ADD:C = opA + opB;
+            `OP_SUB:C = opA - opB;
+            `OP_AND:C = opA & opB;
+            `OP_OR:C = opA | opB;
+            `OP_XOR:C = opA ^ opB;
+            `OP_SHIFT_LL:C = opA << opB[4:0];
+            `OP_SHIFT_RL:C = opA >> opB[4:0];
+            `OP_SHIFT_RA:C = $signed(opA) >>> opB[4:0];
+            default:C = `ZERO_32;     
         endcase
     end
 endmodule

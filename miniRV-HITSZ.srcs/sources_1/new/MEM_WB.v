@@ -22,20 +22,10 @@
 
 module MEM_WB(
     input  wire         cpu_rst,    //High active
-    input  wire         cpu_clk,
-    //input  wire         stop_MEM_WB, //High active   
-    
+    input  wire         cpu_clk,  
     input  wire         EXE_MEM_RFWen,
-    //input  wire         ID_EXE_DRAMWen,
     input  wire         EXE_MEM_PCSel,
-    //input  wire  [2:0]  Ctrl_BCOMPEn,
-    //input  wire  [3:0]  IMMSel,
-    //input  wire  [3:0]  Ctrl_ALUSel,
-    //input  wire         Ctrl_ASel,
-    //input  wire         Ctrl_BSel,
     input  wire  [1:0]  EXE_MEM_WBSel,
-    //input  wire  [31:0] RF_rD1,
-    //input  wire  [31:0] ID_EXE_rD2,
     input  wire  [31:0] EXE_MEM_imm,
     input  wire  [31:0] EXE_MEM_pc,
     input  wire  [31:0] EXE_MEM_naddr,
@@ -46,16 +36,8 @@ module MEM_WB(
     input  wire  [4:0]  EXE_MEM_wR,
     
     output reg          MEM_WB_RFWen,
-    //output reg          EXE_MEM_DRAMWen,
     output reg          MEM_WB_PCSel,
-    //output reg   [2:0]  ID_EXE_BCOMPEn,
-    //output reg   [3:0]  ID_EXE_IMMSel,
-    //output reg   [3:0]  ID_EXE_ALUSel,
-    //output reg          ID_EXE_ASel,
-    //output reg          ID_EXE_BSel,
     output reg   [1:0]  MEM_WB_WBSel,
-    //output reg   [31:0] ID_EXE_RF_rD1,
-    //output reg   [31:0] MEM_WB_RF_rD2,
     output reg   [31:0] MEM_WB_imm,
     output reg   [31:0] MEM_WB_pc,
     output reg   [31:0] MEM_WB_naddr,

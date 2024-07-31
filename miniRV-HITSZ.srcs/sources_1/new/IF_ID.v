@@ -34,15 +34,12 @@ module IF_ID(
     output reg  [31:0]  IF_ID_naddr,
     output reg  [31:0]  IF_ID_pc
     );
-    always @(posedge cpu_clk or posedge cpu_rst)
-    begin
-        if(cpu_rst)
-            begin
-                IF_ID_inst  <= 32'h0000_0000;
-                IF_ID_naddr  <= 32'h0000_0000;;
-                IF_ID_pc  <= 32'h0000_0000;;
-            end
-        else begin
+    always @(posedge cpu_clk or posedge cpu_rst) begin
+        if(cpu_rst) begin
+            IF_ID_inst  <= 32'h0000_0000;
+            IF_ID_naddr  <= 32'h0000_0000;
+            IF_ID_pc  <= 32'h0000_0000;
+         end else begin
             IF_ID_inst <= stop_IF_ID?IF_ID_inst:inst;
             IF_ID_naddr <= stop_IF_ID?IF_ID_naddr:PC_ADD_naddr;
             IF_ID_pc <= stop_IF_ID?IF_ID_pc:PC_pc;

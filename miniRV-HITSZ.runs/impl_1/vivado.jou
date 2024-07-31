@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jul 28 21:11:59 2024
-# Process ID: 24352
+# Start of session at: Tue Jul 30 22:23:35 2024
+# Process ID: 15980
 # Current directory: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1
 # Command line: vivado.exe -log miniRV_SoC.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source miniRV_SoC.tcl -notrace
 # Log file: F:/miniRV-HITSZ/miniRV-HITSZ.runs/impl_1/miniRV_SoC.vdi

@@ -1,0 +1,38 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "F:/miniRV-HITSZ/miniRV-HITSZ.srcs/sources_1/new/defines.vh" --include "../../../../miniRV-HITSZ.srcs/sources_1/new" --include "../../../../miniRV-HITSZ.srcs/sources_1/ip/cpuclk" \
+"../../../../miniRV-HITSZ.srcs/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/ip/cpuclk/cpuclk.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/ALU.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/AMUX.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/BCOMP.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/BMUX.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Bridge.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Buttons.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Controler.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Detect_RAW.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Digital.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Digital_trans.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/EXE_MEM.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/ID_EXE.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/IF_ID.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/IMM_GEN.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Led_Devices.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/MEM_WB.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/NPC_MUX.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/PC.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/PC_ADD.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Process_RAW.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/RF.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/Switches.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/WB_MUX.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/miniRV_SoC.v" \
+"../../../../miniRV-HITSZ.srcs/sources_1/new/myCPU.v" \
+"../../../../miniRV-HITSZ.srcs/sim_1/new/miniRV_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
